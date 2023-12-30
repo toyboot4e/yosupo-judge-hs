@@ -5,3 +5,5 @@
 **/.gitignore
 **/.projectile
 
+**/test-cases
+
