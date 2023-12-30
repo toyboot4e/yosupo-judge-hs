@@ -1,0 +1,24 @@
+#!/usr/bin/env -S bash
+
+# copy test cases generated in the 
+
+from=$HOME/ghq/github.com/yosupo06/library-checker-problems
+out=$HOME/dev/hs/yosupo-judge-hs
+
+pull() {
+  genre=$1
+  mkdir $out/$genre/test-cases
+  for p in $(ls $genre) ; do
+    mkdir $out/$genre/test-cases/$p
+    cp -f $from/$genre/$p/in/* $out/$genre/test-cases/$p/
+    cp -f $from/$genre/$p/out/* $out/$genre/test-cases/$p
+  done
+}
+
+pull datastructure
+pull geo
+pull sample
+pull graph
+pull math
+pull string
+
