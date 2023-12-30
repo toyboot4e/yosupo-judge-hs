@@ -1,0 +1,529 @@
+cradle:
+  cabal:
+    - path: "math/addition_of_big_integers.hs"
+      component: "yosupo-judge-hs:exe:addition_of_big_integers-exe"
+
+    - path: "sample/aplusb.hs"
+      component: "yosupo-judge-hs:exe:aplusb-exe"
+
+    - path: "datastructure/area_of_union_of_rectangles.hs"
+      component: "yosupo-judge-hs:exe:area_of_union_of_rectangles-exe"
+
+    - path: "graph/assignment.hs"
+      component: "yosupo-judge-hs:exe:assignment-exe"
+
+    - path: "datastructure/associative_array.hs"
+      component: "yosupo-judge-hs:exe:associative_array-exe"
+
+    - path: "math/bernoulli_number.hs"
+      component: "yosupo-judge-hs:exe:bernoulli_number-exe"
+
+    - path: "graph/biconnected_components.hs"
+      component: "yosupo-judge-hs:exe:biconnected_components-exe"
+
+    - path: "math/binomial_coefficient.hs"
+      component: "yosupo-judge-hs:exe:binomial_coefficient-exe"
+
+    - path: "math/binomial_coefficient_prime_mod.hs"
+      component: "yosupo-judge-hs:exe:binomial_coefficient_prime_mod-exe"
+
+    - path: "graph/bipartite_edge_coloring.hs"
+      component: "yosupo-judge-hs:exe:bipartite_edge_coloring-exe"
+
+    - path: "graph/bipartitematching.hs"
+      component: "yosupo-judge-hs:exe:bipartitematching-exe"
+
+    - path: "math/bitwise_and_convolution.hs"
+      component: "yosupo-judge-hs:exe:bitwise_and_convolution-exe"
+
+    - path: "math/bitwise_xor_convolution.hs"
+      component: "yosupo-judge-hs:exe:bitwise_xor_convolution-exe"
+
+    - path: "graph/cartesian_tree.hs"
+      component: "yosupo-judge-hs:exe:cartesian_tree-exe"
+
+    - path: "math/characteristic_polynomial.hs"
+      component: "yosupo-judge-hs:exe:characteristic_polynomial-exe"
+
+    - path: "graph/chordal_graph_recognition.hs"
+      component: "yosupo-judge-hs:exe:chordal_graph_recognition-exe"
+
+    - path: "graph/chromatic_number.hs"
+      component: "yosupo-judge-hs:exe:chromatic_number-exe"
+
+    - path: "graph/common_interval_decomposition_tree.hs"
+      component: "yosupo-judge-hs:exe:common_interval_decomposition_tree-exe"
+
+    - path: "math/composition_of_formal_power_series.hs"
+      component: "yosupo-judge-hs:exe:composition_of_formal_power_series-exe"
+
+    - path: "math/compositional_inverse_of_formal_power_series.hs"
+      component: "yosupo-judge-hs:exe:compositional_inverse_of_formal_power_series-exe"
+
+    - path: "math/consecutive_terms_of_linear_recurrent_sequence.hs"
+      component: "yosupo-judge-hs:exe:consecutive_terms_of_linear_recurrent_sequence-exe"
+
+    - path: "math/conversion_from_monomial_basis_to_newton_basis.hs"
+      component: "yosupo-judge-hs:exe:conversion_from_monomial_basis_to_newton_basis-exe"
+
+    - path: "geo/convex_layers.hs"
+      component: "yosupo-judge-hs:exe:convex_layers-exe"
+
+    - path: "math/convolution_mod.hs"
+      component: "yosupo-judge-hs:exe:convolution_mod-exe"
+
+    - path: "math/convolution_mod_1000000007.hs"
+      component: "yosupo-judge-hs:exe:convolution_mod_1000000007-exe"
+
+    - path: "math/convolution_mod_2_64.hs"
+      component: "yosupo-judge-hs:exe:convolution_mod_2_64-exe"
+
+    - path: "math/convolution_mod_large.hs"
+      component: "yosupo-judge-hs:exe:convolution_mod_large-exe"
+
+    - path: "math/counting_primes.hs"
+      component: "yosupo-judge-hs:exe:counting_primes-exe"
+
+    - path: "graph/cycle_detection.hs"
+      component: "yosupo-judge-hs:exe:cycle_detection-exe"
+
+    - path: "graph/cycle_detection_undirected.hs"
+      component: "yosupo-judge-hs:exe:cycle_detection_undirected-exe"
+
+    - path: "datastructure/deque_operate_all_composite.hs"
+      component: "yosupo-judge-hs:exe:deque_operate_all_composite-exe"
+
+    - path: "graph/directedmst.hs"
+      component: "yosupo-judge-hs:exe:directedmst-exe"
+
+    - path: "math/discrete_logarithm_mod.hs"
+      component: "yosupo-judge-hs:exe:discrete_logarithm_mod-exe"
+
+    - path: "math/division_of_big_integers.hs"
+      component: "yosupo-judge-hs:exe:division_of_big_integers-exe"
+
+    - path: "math/division_of_polynomials.hs"
+      component: "yosupo-judge-hs:exe:division_of_polynomials-exe"
+
+    - path: "graph/dominatortree.hs"
+      component: "yosupo-judge-hs:exe:dominatortree-exe"
+
+    - path: "datastructure/double_ended_priority_queue.hs"
+      component: "yosupo-judge-hs:exe:double_ended_priority_queue-exe"
+
+    - path: "datastructure/dynamic_graph_vertex_add_component_sum.hs"
+      component: "yosupo-judge-hs:exe:dynamic_graph_vertex_add_component_sum-exe"
+
+    - path: "datastructure/dynamic_sequence_range_affine_range_sum.hs"
+      component: "yosupo-judge-hs:exe:dynamic_sequence_range_affine_range_sum-exe"
+
+    - path: "datastructure/dynamic_tree_subtree_add_subtree_sum.hs"
+      component: "yosupo-judge-hs:exe:dynamic_tree_subtree_add_subtree_sum-exe"
+
+    - path: "datastructure/dynamic_tree_vertex_add_path_sum.hs"
+      component: "yosupo-judge-hs:exe:dynamic_tree_vertex_add_path_sum-exe"
+
+    - path: "datastructure/dynamic_tree_vertex_add_subtree_sum.hs"
+      component: "yosupo-judge-hs:exe:dynamic_tree_vertex_add_subtree_sum-exe"
+
+    - path: "datastructure/dynamic_tree_vertex_set_path_composite.hs"
+      component: "yosupo-judge-hs:exe:dynamic_tree_vertex_set_path_composite-exe"
+
+    - path: "graph/enumerate_cliques.hs"
+      component: "yosupo-judge-hs:exe:enumerate_cliques-exe"
+
+    - path: "string/enumerate_palindromes.hs"
+      component: "yosupo-judge-hs:exe:enumerate_palindromes-exe"
+
+    - path: "math/enumerate_primes.hs"
+      component: "yosupo-judge-hs:exe:enumerate_primes-exe"
+
+    - path: "math/enumerate_quotients.hs"
+      component: "yosupo-judge-hs:exe:enumerate_quotients-exe"
+
+    - path: "graph/enumerate_triangles.hs"
+      component: "yosupo-judge-hs:exe:enumerate_triangles-exe"
+
+    - path: "math/exp_of_formal_power_series.hs"
+      component: "yosupo-judge-hs:exe:exp_of_formal_power_series-exe"
+
+    - path: "math/exp_of_formal_power_series_sparse.hs"
+      component: "yosupo-judge-hs:exe:exp_of_formal_power_series_sparse-exe"
+
+    - path: "math/exp_of_set_power_series.hs"
+      component: "yosupo-judge-hs:exe:exp_of_set_power_series-exe"
+
+    - path: "math/factorial.hs"
+      component: "yosupo-judge-hs:exe:factorial-exe"
+
+    - path: "math/factorize.hs"
+      component: "yosupo-judge-hs:exe:factorize-exe"
+
+    - path: "math/find_linear_recurrence.hs"
+      component: "yosupo-judge-hs:exe:find_linear_recurrence-exe"
+
+    - path: "graph/frequency_table_of_tree_distance.hs"
+      component: "yosupo-judge-hs:exe:frequency_table_of_tree_distance-exe"
+
+    - path: "math/gcd_convolution.hs"
+      component: "yosupo-judge-hs:exe:gcd_convolution-exe"
+
+    - path: "math/gcd_of_gaussian_integers.hs"
+      component: "yosupo-judge-hs:exe:gcd_of_gaussian_integers-exe"
+
+    - path: "graph/general_matching.hs"
+      component: "yosupo-judge-hs:exe:general_matching-exe"
+
+    - path: "graph/general_weighted_matching.hs"
+      component: "yosupo-judge-hs:exe:general_weighted_matching-exe"
+
+    - path: "graph/global_minimum_cut_of_dynamic_star_augmented_graph.hs"
+      component: "yosupo-judge-hs:exe:global_minimum_cut_of_dynamic_star_augmented_graph-exe"
+
+    - path: "math/hafnian_of_matrix.hs"
+      component: "yosupo-judge-hs:exe:hafnian_of_matrix-exe"
+
+    - path: "math/inv_of_formal_power_series.hs"
+      component: "yosupo-judge-hs:exe:inv_of_formal_power_series-exe"
+
+    - path: "math/inv_of_formal_power_series_sparse.hs"
+      component: "yosupo-judge-hs:exe:inv_of_formal_power_series_sparse-exe"
+
+    - path: "math/inv_of_polynomials.hs"
+      component: "yosupo-judge-hs:exe:inv_of_polynomials-exe"
+
+    - path: "math/inverse_matrix.hs"
+      component: "yosupo-judge-hs:exe:inverse_matrix-exe"
+
+    - path: "graph/jump_on_tree.hs"
+      component: "yosupo-judge-hs:exe:jump_on_tree-exe"
+
+    - path: "graph/k_shortest_walk.hs"
+      component: "yosupo-judge-hs:exe:k_shortest_walk-exe"
+
+    - path: "math/kth_root_integer.hs"
+      component: "yosupo-judge-hs:exe:kth_root_integer-exe"
+
+    - path: "math/kth_root_mod.hs"
+      component: "yosupo-judge-hs:exe:kth_root_mod-exe"
+
+    - path: "math/kth_term_of_linearly_recurrent_sequence.hs"
+      component: "yosupo-judge-hs:exe:kth_term_of_linearly_recurrent_sequence-exe"
+
+    - path: "graph/lca.hs"
+      component: "yosupo-judge-hs:exe:lca-exe"
+
+    - path: "math/lcm_convolution.hs"
+      component: "yosupo-judge-hs:exe:lcm_convolution-exe"
+
+    - path: "datastructure/line_add_get_min.hs"
+      component: "yosupo-judge-hs:exe:line_add_get_min-exe"
+
+    - path: "math/log_of_formal_power_series.hs"
+      component: "yosupo-judge-hs:exe:log_of_formal_power_series-exe"
+
+    - path: "math/log_of_formal_power_series_sparse.hs"
+      component: "yosupo-judge-hs:exe:log_of_formal_power_series_sparse-exe"
+
+    - path: "string/longest_common_substring.hs"
+      component: "yosupo-judge-hs:exe:longest_common_substring-exe"
+
+    - path: "datastructure/longest_increasing_subsequence.hs"
+      component: "yosupo-judge-hs:exe:longest_increasing_subsequence-exe"
+
+    - path: "string/lyndon_factorization.hs"
+      component: "yosupo-judge-hs:exe:lyndon_factorization-exe"
+
+    - path: "graph/manhattanmst.hs"
+      component: "yosupo-judge-hs:exe:manhattanmst-exe"
+
+    - path: "sample/many_aplusb.hs"
+      component: "yosupo-judge-hs:exe:many_aplusb-exe"
+
+    - path: "sample/many_aplusb_128bit.hs.hs"
+      component: "yosupo-judge-hs:exe:many_aplusb_128bit.hs-exe"
+
+    - path: "math/many_factorials.hs"
+      component: "yosupo-judge-hs:exe:many_factorials-exe"
+
+    - path: "math/matrix_det.hs"
+      component: "yosupo-judge-hs:exe:matrix_det-exe"
+
+    - path: "math/matrix_det_arbitrary_mod.hs"
+      component: "yosupo-judge-hs:exe:matrix_det_arbitrary_mod-exe"
+
+    - path: "math/matrix_product.hs"
+      component: "yosupo-judge-hs:exe:matrix_product-exe"
+
+    - path: "math/matrix_rank.hs"
+      component: "yosupo-judge-hs:exe:matrix_rank-exe"
+
+    - path: "graph/maximum_independent_set.hs"
+      component: "yosupo-judge-hs:exe:maximum_independent_set-exe"
+
+    - path: "graph/min_cost_b_flow.hs"
+      component: "yosupo-judge-hs:exe:min_cost_b_flow-exe"
+
+    - path: "math/min_of_mod_of_linear.hs"
+      component: "yosupo-judge-hs:exe:min_of_mod_of_linear-exe"
+
+    - path: "math/min_plus_convolution_convex_arbitrary.hs"
+      component: "yosupo-judge-hs:exe:min_plus_convolution_convex_arbitrary-exe"
+
+    - path: "math/min_plus_convolution_convex_convex.hs"
+      component: "yosupo-judge-hs:exe:min_plus_convolution_convex_convex-exe"
+
+    - path: "graph/minimum_spanning_tree.hs"
+      component: "yosupo-judge-hs:exe:minimum_spanning_tree-exe"
+
+    - path: "math/montmort_number_mod.hs"
+      component: "yosupo-judge-hs:exe:montmort_number_mod-exe"
+
+    - path: "math/mul_mod2n_convolution.hs"
+      component: "yosupo-judge-hs:exe:mul_mod2n_convolution-exe"
+
+    - path: "math/multiplication_of_big_integers.hs"
+      component: "yosupo-judge-hs:exe:multiplication_of_big_integers-exe"
+
+    - path: "math/multipoint_evaluation.hs"
+      component: "yosupo-judge-hs:exe:multipoint_evaluation-exe"
+
+    - path: "math/multipoint_evaluation_on_geometric_sequence.hs"
+      component: "yosupo-judge-hs:exe:multipoint_evaluation_on_geometric_sequence-exe"
+
+    - path: "math/multivariate_convolution.hs"
+      component: "yosupo-judge-hs:exe:multivariate_convolution-exe"
+
+    - path: "math/multivariate_convolution_cyclic.hs"
+      component: "yosupo-judge-hs:exe:multivariate_convolution_cyclic-exe"
+
+    - path: "math/nim_product_64.hs"
+      component: "yosupo-judge-hs:exe:nim_product_64-exe"
+
+    - path: "datastructure/number_of_subsequences.hs"
+      component: "yosupo-judge-hs:exe:number_of_subsequences-exe"
+
+    - path: "string/number_of_substrings.hs"
+      component: "yosupo-judge-hs:exe:number_of_substrings-exe"
+
+    - path: "math/partition_function.hs"
+      component: "yosupo-judge-hs:exe:partition_function-exe"
+
+    - path: "datastructure/persistent_queue.hs"
+      component: "yosupo-judge-hs:exe:persistent_queue-exe"
+
+    - path: "datastructure/persistent_unionfind.hs"
+      component: "yosupo-judge-hs:exe:persistent_unionfind-exe"
+
+    - path: "datastructure/point_add_range_sum.hs"
+      component: "yosupo-judge-hs:exe:point_add_range_sum-exe"
+
+    - path: "datastructure/point_add_rectangle_sum.hs"
+      component: "yosupo-judge-hs:exe:point_add_rectangle_sum-exe"
+
+    - path: "datastructure/point_set_range_composite.hs"
+      component: "yosupo-judge-hs:exe:point_set_range_composite-exe"
+
+    - path: "datastructure/point_set_range_sort_range_composite.hs"
+      component: "yosupo-judge-hs:exe:point_set_range_sort_range_composite-exe"
+
+    - path: "math/polynomial_composite_set_power_series.hs"
+      component: "yosupo-judge-hs:exe:polynomial_composite_set_power_series-exe"
+
+    - path: "math/polynomial_interpolation.hs"
+      component: "yosupo-judge-hs:exe:polynomial_interpolation-exe"
+
+    - path: "math/polynomial_interpolation_on_geometric_sequence.hs"
+      component: "yosupo-judge-hs:exe:polynomial_interpolation_on_geometric_sequence-exe"
+
+    - path: "math/polynomial_taylor_shift.hs"
+      component: "yosupo-judge-hs:exe:polynomial_taylor_shift-exe"
+
+    - path: "math/pow_of_formal_power_series.hs"
+      component: "yosupo-judge-hs:exe:pow_of_formal_power_series-exe"
+
+    - path: "math/pow_of_formal_power_series_sparse.hs"
+      component: "yosupo-judge-hs:exe:pow_of_formal_power_series_sparse-exe"
+
+    - path: "math/pow_of_matrix.hs"
+      component: "yosupo-judge-hs:exe:pow_of_matrix-exe"
+
+    - path: "datastructure/predecessor_problem.hs"
+      component: "yosupo-judge-hs:exe:predecessor_problem-exe"
+
+    - path: "string/prefix_substring_lcs.hs"
+      component: "yosupo-judge-hs:exe:prefix_substring_lcs-exe"
+
+    - path: "math/primality_test.hs"
+      component: "yosupo-judge-hs:exe:primality_test-exe"
+
+    - path: "math/primitive_root.hs"
+      component: "yosupo-judge-hs:exe:primitive_root-exe"
+
+    - path: "math/product_of_polynomial_sequence.hs"
+      component: "yosupo-judge-hs:exe:product_of_polynomial_sequence-exe"
+
+    - path: "datastructure/queue_operate_all_composite.hs"
+      component: "yosupo-judge-hs:exe:queue_operate_all_composite-exe"
+
+    - path: "datastructure/range_affine_point_get.hs"
+      component: "yosupo-judge-hs:exe:range_affine_point_get-exe"
+
+    - path: "datastructure/range_affine_range_sum.hs"
+      component: "yosupo-judge-hs:exe:range_affine_range_sum-exe"
+
+    - path: "datastructure/range_chmin_chmax_add_range_sum.hs"
+      component: "yosupo-judge-hs:exe:range_chmin_chmax_add_range_sum-exe"
+
+    - path: "datastructure/range_kth_smallest.hs"
+      component: "yosupo-judge-hs:exe:range_kth_smallest-exe"
+
+    - path: "datastructure/range_reverse_range_sum.hs"
+      component: "yosupo-judge-hs:exe:range_reverse_range_sum-exe"
+
+    - path: "datastructure/rectangle_sum.hs"
+      component: "yosupo-judge-hs:exe:rectangle_sum-exe"
+
+    - path: "graph/rooted_tree_isomorphism_classification.hs"
+      component: "yosupo-judge-hs:exe:rooted_tree_isomorphism_classification-exe"
+
+    - path: "string/runenumerate.hs"
+      component: "yosupo-judge-hs:exe:runenumerate-exe"
+
+    - path: "graph/scc.hs"
+      component: "yosupo-judge-hs:exe:scc-exe"
+
+    - path: "datastructure/segment_add_get_min.hs"
+      component: "yosupo-judge-hs:exe:segment_add_get_min-exe"
+
+    - path: "datastructure/set_xor_min.hs"
+      component: "yosupo-judge-hs:exe:set_xor_min-exe"
+
+    - path: "math/sharp_p_subset_sum.hs"
+      component: "yosupo-judge-hs:exe:sharp_p_subset_sum-exe"
+
+    - path: "math/shift_of_sampling_points_of_polynomial.hs"
+      component: "yosupo-judge-hs:exe:shift_of_sampling_points_of_polynomial-exe"
+
+    - path: "graph/shortest_path.hs"
+      component: "yosupo-judge-hs:exe:shortest_path-exe"
+
+    - path: "geo/sort_points_by_argument.hs.hs"
+      component: "yosupo-judge-hs:exe:sort_points_by_argument.hs-exe"
+
+    - path: "math/sparse_matrix_det.hs"
+      component: "yosupo-judge-hs:exe:sparse_matrix_det-exe"
+
+    - path: "math/sqrt_mod.hs"
+      component: "yosupo-judge-hs:exe:sqrt_mod-exe"
+
+    - path: "math/sqrt_of_formal_power_series.hs"
+      component: "yosupo-judge-hs:exe:sqrt_of_formal_power_series-exe"
+
+    - path: "math/sqrt_of_formal_power_series_sparse.hs"
+      component: "yosupo-judge-hs:exe:sqrt_of_formal_power_series_sparse-exe"
+
+    - path: "datastructure/static_range_count_distinct.hs"
+      component: "yosupo-judge-hs:exe:static_range_count_distinct-exe"
+
+    - path: "datastructure/static_range_frequency.hs"
+      component: "yosupo-judge-hs:exe:static_range_frequency-exe"
+
+    - path: "datastructure/static_range_inversions_query.hs"
+      component: "yosupo-judge-hs:exe:static_range_inversions_query-exe"
+
+    - path: "datastructure/static_range_lis_query.hs"
+      component: "yosupo-judge-hs:exe:static_range_lis_query-exe"
+
+    - path: "datastructure/static_range_sum.hs"
+      component: "yosupo-judge-hs:exe:static_range_sum-exe"
+
+    - path: "datastructure/static_rectangle_add_rectangle_sum.hs"
+      component: "yosupo-judge-hs:exe:static_rectangle_add_rectangle_sum-exe"
+
+    - path: "datastructure/staticrmq.hs"
+      component: "yosupo-judge-hs:exe:staticrmq-exe"
+
+    - path: "math/stern_brocot_tree.hs"
+      component: "yosupo-judge-hs:exe:stern_brocot_tree-exe"
+
+    - path: "math/stirling_number_of_the_first_kind.hs"
+      component: "yosupo-judge-hs:exe:stirling_number_of_the_first_kind-exe"
+
+    - path: "math/stirling_number_of_the_first_kind_fixed_k.hs"
+      component: "yosupo-judge-hs:exe:stirling_number_of_the_first_kind_fixed_k-exe"
+
+    - path: "math/stirling_number_of_the_first_kind_small_p_large_n.hs"
+      component: "yosupo-judge-hs:exe:stirling_number_of_the_first_kind_small_p_large_n-exe"
+
+    - path: "math/stirling_number_of_the_second_kind.hs"
+      component: "yosupo-judge-hs:exe:stirling_number_of_the_second_kind-exe"
+
+    - path: "math/stirling_number_of_the_second_kind_fixed_k.hs"
+      component: "yosupo-judge-hs:exe:stirling_number_of_the_second_kind_fixed_k-exe"
+
+    - path: "math/stirling_number_of_the_second_kind_small_p_large_n.hs"
+      component: "yosupo-judge-hs:exe:stirling_number_of_the_second_kind_small_p_large_n-exe"
+
+    - path: "math/subset_convolution.hs"
+      component: "yosupo-judge-hs:exe:subset_convolution-exe"
+
+    - path: "string/suffixarray.hs"
+      component: "yosupo-judge-hs:exe:suffixarray-exe"
+
+    - path: "math/sum_of_exponential_times_polynomial.hs"
+      component: "yosupo-judge-hs:exe:sum_of_exponential_times_polynomial-exe"
+
+    - path: "math/sum_of_exponential_times_polynomial_limit.hs"
+      component: "yosupo-judge-hs:exe:sum_of_exponential_times_polynomial_limit-exe"
+
+    - path: "math/sum_of_floor_of_linear.hs"
+      component: "yosupo-judge-hs:exe:sum_of_floor_of_linear-exe"
+
+    - path: "math/sum_of_totient_function.hs"
+      component: "yosupo-judge-hs:exe:sum_of_totient_function-exe"
+
+    - path: "math/system_of_linear_equations.hs"
+      component: "yosupo-judge-hs:exe:system_of_linear_equations-exe"
+
+    - path: "math/tetration_mod.hs"
+      component: "yosupo-judge-hs:exe:tetration_mod-exe"
+
+    - path: "graph/three_edge_connected_components.hs"
+      component: "yosupo-judge-hs:exe:three_edge_connected_components-exe"
+
+    - path: "graph/tree_decomposition_width_2.hs"
+      component: "yosupo-judge-hs:exe:tree_decomposition_width_2-exe"
+
+    - path: "graph/tree_diameter.hs"
+      component: "yosupo-judge-hs:exe:tree_diameter-exe"
+
+    - path: "graph/tree_path_composite_sum.hs"
+      component: "yosupo-judge-hs:exe:tree_path_composite_sum-exe"
+
+    - path: "graph/two_edge_connected_components.hs"
+      component: "yosupo-judge-hs:exe:two_edge_connected_components-exe"
+
+    - path: "math/two_sat.hs.hs"
+      component: "yosupo-judge-hs:exe:two_sat.hs-exe"
+
+    - path: "datastructure/unionfind.hs"
+      component: "yosupo-judge-hs:exe:unionfind-exe"
+
+    - path: "datastructure/vertex_add_path_sum.hs"
+      component: "yosupo-judge-hs:exe:vertex_add_path_sum-exe"
+
+    - path: "graph/vertex_add_range_contour_sum_on_tree.hs"
+      component: "yosupo-judge-hs:exe:vertex_add_range_contour_sum_on_tree-exe"
+
+    - path: "datastructure/vertex_add_subtree_sum.hs"
+      component: "yosupo-judge-hs:exe:vertex_add_subtree_sum-exe"
+
+    - path: "graph/vertex_get_range_contour_add_on_tree.hs.hs"
+      component: "yosupo-judge-hs:exe:vertex_get_range_contour_add_on_tree.hs-exe"
+
+    - path: "datastructure/vertex_set_path_composite.hs.hs"
+      component: "yosupo-judge-hs:exe:vertex_set_path_composite.hs-exe"
+
+    - path: "string/zalgorithm.hs"
+      component: "yosupo-judge-hs:exe:zalgorithm-exe"

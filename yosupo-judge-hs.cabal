@@ -1,0 +1,7401 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.36.0.
+--
+-- see: https://github.com/sol/hpack
+
+name:           yosupo-judge-hs
+version:        0.0.0
+build-type:     Simple
+
+executable addition_of_big_integers-exe
+  main-is: addition_of_big_integers.hs
+  hs-source-dirs:
+      math
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable aplusb-exe
+  main-is: aplusb.hs
+  hs-source-dirs:
+      sample
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable area_of_union_of_rectangles-exe
+  main-is: area_of_union_of_rectangles.hs
+  hs-source-dirs:
+      datastructure
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable assignment-exe
+  main-is: assignment.hs
+  hs-source-dirs:
+      graph
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable associative_array-exe
+  main-is: associative_array.hs
+  hs-source-dirs:
+      datastructure
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable bernoulli_number-exe
+  main-is: bernoulli_number.hs
+  hs-source-dirs:
+      math
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable biconnected_components-exe
+  main-is: biconnected_components.hs
+  hs-source-dirs:
+      graph
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable binomial_coefficient-exe
+  main-is: binomial_coefficient.hs
+  hs-source-dirs:
+      math
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable binomial_coefficient_prime_mod-exe
+  main-is: binomial_coefficient_prime_mod.hs
+  hs-source-dirs:
+      math
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable bipartite_edge_coloring-exe
+  main-is: bipartite_edge_coloring.hs
+  hs-source-dirs:
+      graph
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable bipartitematching-exe
+  main-is: bipartitematching.hs
+  hs-source-dirs:
+      graph
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable bitwise_and_convolution-exe
+  main-is: bitwise_and_convolution.hs
+  hs-source-dirs:
+      math
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable bitwise_xor_convolution-exe
+  main-is: bitwise_xor_convolution.hs
+  hs-source-dirs:
+      math
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable cartesian_tree-exe
+  main-is: cartesian_tree.hs
+  hs-source-dirs:
+      graph
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable characteristic_polynomial-exe
+  main-is: characteristic_polynomial.hs
+  hs-source-dirs:
+      math
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable chordal_graph_recognition-exe
+  main-is: chordal_graph_recognition.hs
+  hs-source-dirs:
+      graph
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable chromatic_number-exe
+  main-is: chromatic_number.hs
+  hs-source-dirs:
+      graph
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable common_interval_decomposition_tree-exe
+  main-is: common_interval_decomposition_tree.hs
+  hs-source-dirs:
+      graph
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable composition_of_formal_power_series-exe
+  main-is: composition_of_formal_power_series.hs
+  hs-source-dirs:
+      math
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable compositional_inverse_of_formal_power_series-exe
+  main-is: compositional_inverse_of_formal_power_series.hs
+  hs-source-dirs:
+      math
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable consecutive_terms_of_linear_recurrent_sequence-exe
+  main-is: consecutive_terms_of_linear_recurrent_sequence.hs
+  hs-source-dirs:
+      math
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable conversion_from_monomial_basis_to_newton_basis-exe
+  main-is: conversion_from_monomial_basis_to_newton_basis.hs
+  hs-source-dirs:
+      math
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable convex_layers-exe
+  main-is: convex_layers.hs
+  hs-source-dirs:
+      geo
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable convolution_mod-exe
+  main-is: convolution_mod.hs
+  hs-source-dirs:
+      math
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable convolution_mod_1000000007-exe
+  main-is: convolution_mod_1000000007.hs
+  hs-source-dirs:
+      math
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable convolution_mod_2_64-exe
+  main-is: convolution_mod_2_64.hs
+  hs-source-dirs:
+      math
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable convolution_mod_large-exe
+  main-is: convolution_mod_large.hs
+  hs-source-dirs:
+      math
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable counting_primes-exe
+  main-is: counting_primes.hs
+  hs-source-dirs:
+      math
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable cycle_detection-exe
+  main-is: cycle_detection.hs
+  hs-source-dirs:
+      graph
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable cycle_detection_undirected-exe
+  main-is: cycle_detection_undirected.hs
+  hs-source-dirs:
+      graph
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable deque_operate_all_composite-exe
+  main-is: deque_operate_all_composite.hs
+  hs-source-dirs:
+      datastructure
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable directedmst-exe
+  main-is: directedmst.hs
+  hs-source-dirs:
+      graph
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable discrete_logarithm_mod-exe
+  main-is: discrete_logarithm_mod.hs
+  hs-source-dirs:
+      math
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable division_of_big_integers-exe
+  main-is: division_of_big_integers.hs
+  hs-source-dirs:
+      math
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable division_of_polynomials-exe
+  main-is: division_of_polynomials.hs
+  hs-source-dirs:
+      math
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable dominatortree-exe
+  main-is: dominatortree.hs
+  hs-source-dirs:
+      graph
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable double_ended_priority_queue-exe
+  main-is: double_ended_priority_queue.hs
+  hs-source-dirs:
+      datastructure
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable dynamic_graph_vertex_add_component_sum-exe
+  main-is: dynamic_graph_vertex_add_component_sum.hs
+  hs-source-dirs:
+      datastructure
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable dynamic_sequence_range_affine_range_sum-exe
+  main-is: dynamic_sequence_range_affine_range_sum.hs
+  hs-source-dirs:
+      datastructure
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable dynamic_tree_subtree_add_subtree_sum-exe
+  main-is: dynamic_tree_subtree_add_subtree_sum.hs
+  hs-source-dirs:
+      datastructure
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable dynamic_tree_vertex_add_path_sum-exe
+  main-is: dynamic_tree_vertex_add_path_sum.hs
+  hs-source-dirs:
+      datastructure
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable dynamic_tree_vertex_add_subtree_sum-exe
+  main-is: dynamic_tree_vertex_add_subtree_sum.hs
+  hs-source-dirs:
+      datastructure
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable dynamic_tree_vertex_set_path_composite-exe
+  main-is: dynamic_tree_vertex_set_path_composite.hs
+  hs-source-dirs:
+      datastructure
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable enumerate_cliques-exe
+  main-is: enumerate_cliques.hs
+  hs-source-dirs:
+      graph
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable enumerate_palindromes-exe
+  main-is: enumerate_palindromes.hs
+  hs-source-dirs:
+      string
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable enumerate_primes-exe
+  main-is: enumerate_primes.hs
+  hs-source-dirs:
+      math
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable enumerate_quotients-exe
+  main-is: enumerate_quotients.hs
+  hs-source-dirs:
+      math
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable enumerate_triangles-exe
+  main-is: enumerate_triangles.hs
+  hs-source-dirs:
+      graph
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable exp_of_formal_power_series-exe
+  main-is: exp_of_formal_power_series.hs
+  hs-source-dirs:
+      math
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable exp_of_formal_power_series_sparse-exe
+  main-is: exp_of_formal_power_series_sparse.hs
+  hs-source-dirs:
+      math
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable exp_of_set_power_series-exe
+  main-is: exp_of_set_power_series.hs
+  hs-source-dirs:
+      math
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable factorial-exe
+  main-is: factorial.hs
+  hs-source-dirs:
+      math
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable factorize-exe
+  main-is: factorize.hs
+  hs-source-dirs:
+      math
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable find_linear_recurrence-exe
+  main-is: find_linear_recurrence.hs
+  hs-source-dirs:
+      math
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable frequency_table_of_tree_distance-exe
+  main-is: frequency_table_of_tree_distance.hs
+  hs-source-dirs:
+      graph
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable gcd_convolution-exe
+  main-is: gcd_convolution.hs
+  hs-source-dirs:
+      math
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable gcd_of_gaussian_integers-exe
+  main-is: gcd_of_gaussian_integers.hs
+  hs-source-dirs:
+      math
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable general_matching-exe
+  main-is: general_matching.hs
+  hs-source-dirs:
+      graph
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable general_weighted_matching-exe
+  main-is: general_weighted_matching.hs
+  hs-source-dirs:
+      graph
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable global_minimum_cut_of_dynamic_star_augmented_graph-exe
+  main-is: global_minimum_cut_of_dynamic_star_augmented_graph.hs
+  hs-source-dirs:
+      graph
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable hafnian_of_matrix-exe
+  main-is: hafnian_of_matrix.hs
+  hs-source-dirs:
+      math
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable inv_of_formal_power_series-exe
+  main-is: inv_of_formal_power_series.hs
+  hs-source-dirs:
+      math
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable inv_of_formal_power_series_sparse-exe
+  main-is: inv_of_formal_power_series_sparse.hs
+  hs-source-dirs:
+      math
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable inv_of_polynomials-exe
+  main-is: inv_of_polynomials.hs
+  hs-source-dirs:
+      math
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable inverse_matrix-exe
+  main-is: inverse_matrix.hs
+  hs-source-dirs:
+      math
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable jump_on_tree-exe
+  main-is: jump_on_tree.hs
+  hs-source-dirs:
+      graph
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable k_shortest_walk-exe
+  main-is: k_shortest_walk.hs
+  hs-source-dirs:
+      graph
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable kth_root_integer-exe
+  main-is: kth_root_integer.hs
+  hs-source-dirs:
+      math
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable kth_root_mod-exe
+  main-is: kth_root_mod.hs
+  hs-source-dirs:
+      math
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable kth_term_of_linearly_recurrent_sequence-exe
+  main-is: kth_term_of_linearly_recurrent_sequence.hs
+  hs-source-dirs:
+      math
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable lca-exe
+  main-is: lca.hs
+  hs-source-dirs:
+      graph
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable lcm_convolution-exe
+  main-is: lcm_convolution.hs
+  hs-source-dirs:
+      math
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable line_add_get_min-exe
+  main-is: line_add_get_min.hs
+  hs-source-dirs:
+      datastructure
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable log_of_formal_power_series-exe
+  main-is: log_of_formal_power_series.hs
+  hs-source-dirs:
+      math
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable log_of_formal_power_series_sparse-exe
+  main-is: log_of_formal_power_series_sparse.hs
+  hs-source-dirs:
+      math
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable longest_common_substring-exe
+  main-is: longest_common_substring.hs
+  hs-source-dirs:
+      string
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable longest_increasing_subsequence-exe
+  main-is: longest_increasing_subsequence.hs
+  hs-source-dirs:
+      datastructure
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable lyndon_factorization-exe
+  main-is: lyndon_factorization.hs
+  hs-source-dirs:
+      string
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable manhattanmst-exe
+  main-is: manhattanmst.hs
+  hs-source-dirs:
+      graph
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable many_aplusb-exe
+  main-is: many_aplusb.hs
+  hs-source-dirs:
+      sample
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable many_aplusb_128bit.hs-exe
+  main-is: many_aplusb_128bit.hs.hs
+  hs-source-dirs:
+      sample
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable many_factorials-exe
+  main-is: many_factorials.hs
+  hs-source-dirs:
+      math
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable matrix_det-exe
+  main-is: matrix_det.hs
+  hs-source-dirs:
+      math
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable matrix_det_arbitrary_mod-exe
+  main-is: matrix_det_arbitrary_mod.hs
+  hs-source-dirs:
+      math
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable matrix_product-exe
+  main-is: matrix_product.hs
+  hs-source-dirs:
+      math
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable matrix_rank-exe
+  main-is: matrix_rank.hs
+  hs-source-dirs:
+      math
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable maximum_independent_set-exe
+  main-is: maximum_independent_set.hs
+  hs-source-dirs:
+      graph
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable min_cost_b_flow-exe
+  main-is: min_cost_b_flow.hs
+  hs-source-dirs:
+      graph
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable min_of_mod_of_linear-exe
+  main-is: min_of_mod_of_linear.hs
+  hs-source-dirs:
+      math
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable min_plus_convolution_convex_arbitrary-exe
+  main-is: min_plus_convolution_convex_arbitrary.hs
+  hs-source-dirs:
+      math
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable min_plus_convolution_convex_convex-exe
+  main-is: min_plus_convolution_convex_convex.hs
+  hs-source-dirs:
+      math
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable minimum_spanning_tree-exe
+  main-is: minimum_spanning_tree.hs
+  hs-source-dirs:
+      graph
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable montmort_number_mod-exe
+  main-is: montmort_number_mod.hs
+  hs-source-dirs:
+      math
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable mul_mod2n_convolution-exe
+  main-is: mul_mod2n_convolution.hs
+  hs-source-dirs:
+      math
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable multiplication_of_big_integers-exe
+  main-is: multiplication_of_big_integers.hs
+  hs-source-dirs:
+      math
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable multipoint_evaluation-exe
+  main-is: multipoint_evaluation.hs
+  hs-source-dirs:
+      math
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable multipoint_evaluation_on_geometric_sequence-exe
+  main-is: multipoint_evaluation_on_geometric_sequence.hs
+  hs-source-dirs:
+      math
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable multivariate_convolution-exe
+  main-is: multivariate_convolution.hs
+  hs-source-dirs:
+      math
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable multivariate_convolution_cyclic-exe
+  main-is: multivariate_convolution_cyclic.hs
+  hs-source-dirs:
+      math
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable nim_product_64-exe
+  main-is: nim_product_64.hs
+  hs-source-dirs:
+      math
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable number_of_subsequences-exe
+  main-is: number_of_subsequences.hs
+  hs-source-dirs:
+      datastructure
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable number_of_substrings-exe
+  main-is: number_of_substrings.hs
+  hs-source-dirs:
+      string
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable partition_function-exe
+  main-is: partition_function.hs
+  hs-source-dirs:
+      math
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable persistent_queue-exe
+  main-is: persistent_queue.hs
+  hs-source-dirs:
+      datastructure
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable persistent_unionfind-exe
+  main-is: persistent_unionfind.hs
+  hs-source-dirs:
+      datastructure
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable point_add_range_sum-exe
+  main-is: point_add_range_sum.hs
+  hs-source-dirs:
+      datastructure
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable point_add_rectangle_sum-exe
+  main-is: point_add_rectangle_sum.hs
+  hs-source-dirs:
+      datastructure
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable point_set_range_composite-exe
+  main-is: point_set_range_composite.hs
+  hs-source-dirs:
+      datastructure
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable point_set_range_sort_range_composite-exe
+  main-is: point_set_range_sort_range_composite.hs
+  hs-source-dirs:
+      datastructure
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable polynomial_composite_set_power_series-exe
+  main-is: polynomial_composite_set_power_series.hs
+  hs-source-dirs:
+      math
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable polynomial_interpolation-exe
+  main-is: polynomial_interpolation.hs
+  hs-source-dirs:
+      math
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable polynomial_interpolation_on_geometric_sequence-exe
+  main-is: polynomial_interpolation_on_geometric_sequence.hs
+  hs-source-dirs:
+      math
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable polynomial_taylor_shift-exe
+  main-is: polynomial_taylor_shift.hs
+  hs-source-dirs:
+      math
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable pow_of_formal_power_series-exe
+  main-is: pow_of_formal_power_series.hs
+  hs-source-dirs:
+      math
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable pow_of_formal_power_series_sparse-exe
+  main-is: pow_of_formal_power_series_sparse.hs
+  hs-source-dirs:
+      math
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable pow_of_matrix-exe
+  main-is: pow_of_matrix.hs
+  hs-source-dirs:
+      math
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable predecessor_problem-exe
+  main-is: predecessor_problem.hs
+  hs-source-dirs:
+      datastructure
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable prefix_substring_lcs-exe
+  main-is: prefix_substring_lcs.hs
+  hs-source-dirs:
+      string
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable primality_test-exe
+  main-is: primality_test.hs
+  hs-source-dirs:
+      math
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable primitive_root-exe
+  main-is: primitive_root.hs
+  hs-source-dirs:
+      math
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable product_of_polynomial_sequence-exe
+  main-is: product_of_polynomial_sequence.hs
+  hs-source-dirs:
+      math
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable queue_operate_all_composite-exe
+  main-is: queue_operate_all_composite.hs
+  hs-source-dirs:
+      datastructure
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable range_affine_point_get-exe
+  main-is: range_affine_point_get.hs
+  hs-source-dirs:
+      datastructure
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable range_affine_range_sum-exe
+  main-is: range_affine_range_sum.hs
+  hs-source-dirs:
+      datastructure
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable range_chmin_chmax_add_range_sum-exe
+  main-is: range_chmin_chmax_add_range_sum.hs
+  hs-source-dirs:
+      datastructure
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable range_kth_smallest-exe
+  main-is: range_kth_smallest.hs
+  hs-source-dirs:
+      datastructure
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable range_reverse_range_sum-exe
+  main-is: range_reverse_range_sum.hs
+  hs-source-dirs:
+      datastructure
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable rectangle_sum-exe
+  main-is: rectangle_sum.hs
+  hs-source-dirs:
+      datastructure
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable rooted_tree_isomorphism_classification-exe
+  main-is: rooted_tree_isomorphism_classification.hs
+  hs-source-dirs:
+      graph
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable runenumerate-exe
+  main-is: runenumerate.hs
+  hs-source-dirs:
+      string
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable scc-exe
+  main-is: scc.hs
+  hs-source-dirs:
+      graph
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable segment_add_get_min-exe
+  main-is: segment_add_get_min.hs
+  hs-source-dirs:
+      datastructure
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable set_xor_min-exe
+  main-is: set_xor_min.hs
+  hs-source-dirs:
+      datastructure
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable sharp_p_subset_sum-exe
+  main-is: sharp_p_subset_sum.hs
+  hs-source-dirs:
+      math
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable shift_of_sampling_points_of_polynomial-exe
+  main-is: shift_of_sampling_points_of_polynomial.hs
+  hs-source-dirs:
+      math
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable shortest_path-exe
+  main-is: shortest_path.hs
+  hs-source-dirs:
+      graph
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable sort_points_by_argument.hs-exe
+  main-is: sort_points_by_argument.hs.hs
+  hs-source-dirs:
+      geo
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable sparse_matrix_det-exe
+  main-is: sparse_matrix_det.hs
+  hs-source-dirs:
+      math
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable sqrt_mod-exe
+  main-is: sqrt_mod.hs
+  hs-source-dirs:
+      math
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable sqrt_of_formal_power_series-exe
+  main-is: sqrt_of_formal_power_series.hs
+  hs-source-dirs:
+      math
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable sqrt_of_formal_power_series_sparse-exe
+  main-is: sqrt_of_formal_power_series_sparse.hs
+  hs-source-dirs:
+      math
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable static_range_count_distinct-exe
+  main-is: static_range_count_distinct.hs
+  hs-source-dirs:
+      datastructure
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable static_range_frequency-exe
+  main-is: static_range_frequency.hs
+  hs-source-dirs:
+      datastructure
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable static_range_inversions_query-exe
+  main-is: static_range_inversions_query.hs
+  hs-source-dirs:
+      datastructure
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable static_range_lis_query-exe
+  main-is: static_range_lis_query.hs
+  hs-source-dirs:
+      datastructure
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable static_range_sum-exe
+  main-is: static_range_sum.hs
+  hs-source-dirs:
+      datastructure
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable static_rectangle_add_rectangle_sum-exe
+  main-is: static_rectangle_add_rectangle_sum.hs
+  hs-source-dirs:
+      datastructure
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable staticrmq-exe
+  main-is: staticrmq.hs
+  hs-source-dirs:
+      datastructure
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable stern_brocot_tree-exe
+  main-is: stern_brocot_tree.hs
+  hs-source-dirs:
+      math
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable stirling_number_of_the_first_kind-exe
+  main-is: stirling_number_of_the_first_kind.hs
+  hs-source-dirs:
+      math
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable stirling_number_of_the_first_kind_fixed_k-exe
+  main-is: stirling_number_of_the_first_kind_fixed_k.hs
+  hs-source-dirs:
+      math
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable stirling_number_of_the_first_kind_small_p_large_n-exe
+  main-is: stirling_number_of_the_first_kind_small_p_large_n.hs
+  hs-source-dirs:
+      math
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable stirling_number_of_the_second_kind-exe
+  main-is: stirling_number_of_the_second_kind.hs
+  hs-source-dirs:
+      math
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable stirling_number_of_the_second_kind_fixed_k-exe
+  main-is: stirling_number_of_the_second_kind_fixed_k.hs
+  hs-source-dirs:
+      math
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable stirling_number_of_the_second_kind_small_p_large_n-exe
+  main-is: stirling_number_of_the_second_kind_small_p_large_n.hs
+  hs-source-dirs:
+      math
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable subset_convolution-exe
+  main-is: subset_convolution.hs
+  hs-source-dirs:
+      math
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable suffixarray-exe
+  main-is: suffixarray.hs
+  hs-source-dirs:
+      string
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable sum_of_exponential_times_polynomial-exe
+  main-is: sum_of_exponential_times_polynomial.hs
+  hs-source-dirs:
+      math
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable sum_of_exponential_times_polynomial_limit-exe
+  main-is: sum_of_exponential_times_polynomial_limit.hs
+  hs-source-dirs:
+      math
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable sum_of_floor_of_linear-exe
+  main-is: sum_of_floor_of_linear.hs
+  hs-source-dirs:
+      math
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable sum_of_totient_function-exe
+  main-is: sum_of_totient_function.hs
+  hs-source-dirs:
+      math
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable system_of_linear_equations-exe
+  main-is: system_of_linear_equations.hs
+  hs-source-dirs:
+      math
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable tetration_mod-exe
+  main-is: tetration_mod.hs
+  hs-source-dirs:
+      math
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable three_edge_connected_components-exe
+  main-is: three_edge_connected_components.hs
+  hs-source-dirs:
+      graph
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable tree_decomposition_width_2-exe
+  main-is: tree_decomposition_width_2.hs
+  hs-source-dirs:
+      graph
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable tree_diameter-exe
+  main-is: tree_diameter.hs
+  hs-source-dirs:
+      graph
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable tree_path_composite_sum-exe
+  main-is: tree_path_composite_sum.hs
+  hs-source-dirs:
+      graph
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable two_edge_connected_components-exe
+  main-is: two_edge_connected_components.hs
+  hs-source-dirs:
+      graph
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable two_sat.hs-exe
+  main-is: two_sat.hs.hs
+  hs-source-dirs:
+      math
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable unionfind-exe
+  main-is: unionfind.hs
+  hs-source-dirs:
+      datastructure
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable vertex_add_path_sum-exe
+  main-is: vertex_add_path_sum.hs
+  hs-source-dirs:
+      datastructure
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable vertex_add_range_contour_sum_on_tree-exe
+  main-is: vertex_add_range_contour_sum_on_tree.hs
+  hs-source-dirs:
+      graph
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable vertex_add_subtree_sum-exe
+  main-is: vertex_add_subtree_sum.hs
+  hs-source-dirs:
+      datastructure
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable vertex_get_range_contour_add_on_tree.hs-exe
+  main-is: vertex_get_range_contour_add_on_tree.hs.hs
+  hs-source-dirs:
+      graph
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable vertex_set_path_composite.hs-exe
+  main-is: vertex_set_path_composite.hs.hs
+  hs-source-dirs:
+      datastructure
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021
+
+executable zalgorithm-exe
+  main-is: zalgorithm.hs
+  hs-source-dirs:
+      string
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
+  build-depends:
+      QuickCheck
+    , array
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , deepseq
+    , extra
+    , fgl
+    , hashable
+    , heaps
+    , integer-logarithms
+    , lens
+    , massiv
+    , mono-traversable
+    , mtl
+    , mutable-containers
+    , mwc-random
+    , parallel
+    , parsec
+    , primitive
+    , psqueues
+    , random
+    , reflection
+    , template-haskell
+    , text
+    , tf-random
+    , transformers
+    , unboxing-vector
+    , unordered-containers
+    , utility-ht
+    , vector
+    , vector-algorithms
+    , vector-th-unbox
+  default-language: GHC2021

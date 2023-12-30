@@ -1,0 +1,944 @@
+dependencies:
+   - base
+
+   - QuickCheck
+   - array
+   - attoparsec
+   - bytestring
+   - containers
+   - deepseq
+   - extra
+   - fgl
+   - hashable
+   - heaps
+   - integer-logarithms
+   - lens
+   - massiv
+   - mono-traversable
+   - mtl
+   - mutable-containers
+   - mwc-random
+   - parallel
+   - parsec
+   - primitive
+   - psqueues
+   - random
+   - reflection
+   - template-haskell
+   - text
+   - tf-random
+   - transformers
+   - unboxing-vector
+   - unordered-containers
+   - utility-ht
+   - vector
+   - vector-algorithms
+   - vector-th-unbox
+
+language: GHC2021
+
+# DRY for package.yaml executables:
+# <https://www.reddit.com/r/haskell/comments/haeqin/dry_for_packageyaml_executables/>
+_exe-defs: &exe-defaults
+  # dependencies:
+  # - abs
+  ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    - -Wall # all warnings
+    - -DDEBUG # debug flag
+  other-modules: []
+
+# REMARK: See `README` for the langauge server support.
+executables:
+  cycle_detection-exe:
+    <<: *exe-defaults
+    source-dirs: "graph"
+    main: cycle_detaction.hs
+
+  shortest_path-exe:
+    <<: *exe-defaults
+    source-dirs: "graph"
+    main: shortest_path.hs
+
+  area_of_union_of_rectangles-exe:
+    <<: *exe-defaults
+    source-dirs: "datastructure"
+    main: area_of_union_of_rectangles.hs
+
+  associative_array-exe:
+    <<: *exe-defaults
+    source-dirs: "datastructure"
+    main: associative_array.hs
+
+  deque_operate_all_composite-exe:
+    <<: *exe-defaults
+    source-dirs: "datastructure"
+    main: deque_operate_all_composite.hs
+
+  double_ended_priority_queue-exe:
+    <<: *exe-defaults
+    source-dirs: "datastructure"
+    main: double_ended_priority_queue.hs
+
+  dynamic_graph_vertex_add_component_sum-exe:
+    <<: *exe-defaults
+    source-dirs: "datastructure"
+    main: dynamic_graph_vertex_add_component_sum.hs
+
+  dynamic_sequence_range_affine_range_sum-exe:
+    <<: *exe-defaults
+    source-dirs: "datastructure"
+    main: dynamic_sequence_range_affine_range_sum.hs
+
+  dynamic_tree_subtree_add_subtree_sum-exe:
+    <<: *exe-defaults
+    source-dirs: "datastructure"
+    main: dynamic_tree_subtree_add_subtree_sum.hs
+
+  dynamic_tree_vertex_add_path_sum-exe:
+    <<: *exe-defaults
+    source-dirs: "datastructure"
+    main: dynamic_tree_vertex_add_path_sum.hs
+
+  dynamic_tree_vertex_add_subtree_sum-exe:
+    <<: *exe-defaults
+    source-dirs: "datastructure"
+    main: dynamic_tree_vertex_add_subtree_sum.hs
+
+  dynamic_tree_vertex_set_path_composite-exe:
+    <<: *exe-defaults
+    source-dirs: "datastructure"
+    main: dynamic_tree_vertex_set_path_composite.hs
+
+  line_add_get_min-exe:
+    <<: *exe-defaults
+    source-dirs: "datastructure"
+    main: line_add_get_min.hs
+
+  longest_increasing_subsequence-exe:
+    <<: *exe-defaults
+    source-dirs: "datastructure"
+    main: longest_increasing_subsequence.hs
+
+  number_of_subsequences-exe:
+    <<: *exe-defaults
+    source-dirs: "datastructure"
+    main: number_of_subsequences.hs
+
+  persistent_queue-exe:
+    <<: *exe-defaults
+    source-dirs: "datastructure"
+    main: persistent_queue.hs
+
+  persistent_unionfind-exe:
+    <<: *exe-defaults
+    source-dirs: "datastructure"
+    main: persistent_unionfind.hs
+
+  point_add_range_sum-exe:
+    <<: *exe-defaults
+    source-dirs: "datastructure"
+    main: point_add_range_sum.hs
+
+  point_add_rectangle_sum-exe:
+    <<: *exe-defaults
+    source-dirs: "datastructure"
+    main: point_add_rectangle_sum.hs
+
+  point_set_range_composite-exe:
+    <<: *exe-defaults
+    source-dirs: "datastructure"
+    main: point_set_range_composite.hs
+
+  point_set_range_sort_range_composite-exe:
+    <<: *exe-defaults
+    source-dirs: "datastructure"
+    main: point_set_range_sort_range_composite.hs
+
+  predecessor_problem-exe:
+    <<: *exe-defaults
+    source-dirs: "datastructure"
+    main: predecessor_problem.hs
+
+  queue_operate_all_composite-exe:
+    <<: *exe-defaults
+    source-dirs: "datastructure"
+    main: queue_operate_all_composite.hs
+
+  range_affine_point_get-exe:
+    <<: *exe-defaults
+    source-dirs: "datastructure"
+    main: range_affine_point_get.hs
+
+  range_affine_range_sum-exe:
+    <<: *exe-defaults
+    source-dirs: "datastructure"
+    main: range_affine_range_sum.hs
+
+  range_chmin_chmax_add_range_sum-exe:
+    <<: *exe-defaults
+    source-dirs: "datastructure"
+    main: range_chmin_chmax_add_range_sum.hs
+
+  range_kth_smallest-exe:
+    <<: *exe-defaults
+    source-dirs: "datastructure"
+    main: range_kth_smallest.hs
+
+  range_reverse_range_sum-exe:
+    <<: *exe-defaults
+    source-dirs: "datastructure"
+    main: range_reverse_range_sum.hs
+
+  rectangle_sum-exe:
+    <<: *exe-defaults
+    source-dirs: "datastructure"
+    main: rectangle_sum.hs
+
+  segment_add_get_min-exe:
+    <<: *exe-defaults
+    source-dirs: "datastructure"
+    main: segment_add_get_min.hs
+
+  set_xor_min-exe:
+    <<: *exe-defaults
+    source-dirs: "datastructure"
+    main: set_xor_min.hs
+
+  static_range_count_distinct-exe:
+    <<: *exe-defaults
+    source-dirs: "datastructure"
+    main: static_range_count_distinct.hs
+
+  static_range_frequency-exe:
+    <<: *exe-defaults
+    source-dirs: "datastructure"
+    main: static_range_frequency.hs
+
+  static_range_inversions_query-exe:
+    <<: *exe-defaults
+    source-dirs: "datastructure"
+    main: static_range_inversions_query.hs
+
+  static_range_lis_query-exe:
+    <<: *exe-defaults
+    source-dirs: "datastructure"
+    main: static_range_lis_query.hs
+
+  static_range_sum-exe:
+    <<: *exe-defaults
+    source-dirs: "datastructure"
+    main: static_range_sum.hs
+
+  static_rectangle_add_rectangle_sum-exe:
+    <<: *exe-defaults
+    source-dirs: "datastructure"
+    main: static_rectangle_add_rectangle_sum.hs
+
+  staticrmq-exe:
+    <<: *exe-defaults
+    source-dirs: "datastructure"
+    main: staticrmq.hs
+
+  unionfind-exe:
+    <<: *exe-defaults
+    source-dirs: "datastructure"
+    main: unionfind.hs
+
+  vertex_add_path_sum-exe:
+    <<: *exe-defaults
+    source-dirs: "datastructure"
+    main: vertex_add_path_sum.hs
+
+  vertex_add_subtree_sum-exe:
+    <<: *exe-defaults
+    source-dirs: "datastructure"
+    main: vertex_add_subtree_sum.hs
+
+  vertex_set_path_composite.hs-exe:
+    <<: *exe-defaults
+    source-dirs: "datastructure"
+    main: vertex_set_path_composite.hs.hs
+
+  convex_layers-exe:
+    <<: *exe-defaults
+    source-dirs: "geo"
+    main: convex_layers.hs
+
+  sort_points_by_argument.hs-exe:
+    <<: *exe-defaults
+    source-dirs: "geo"
+    main: sort_points_by_argument.hs.hs
+
+  assignment-exe:
+    <<: *exe-defaults
+    source-dirs: "graph"
+    main: assignment.hs
+
+  biconnected_components-exe:
+    <<: *exe-defaults
+    source-dirs: "graph"
+    main: biconnected_components.hs
+
+  bipartite_edge_coloring-exe:
+    <<: *exe-defaults
+    source-dirs: "graph"
+    main: bipartite_edge_coloring.hs
+
+  bipartitematching-exe:
+    <<: *exe-defaults
+    source-dirs: "graph"
+    main: bipartitematching.hs
+
+  cartesian_tree-exe:
+    <<: *exe-defaults
+    source-dirs: "graph"
+    main: cartesian_tree.hs
+
+  chordal_graph_recognition-exe:
+    <<: *exe-defaults
+    source-dirs: "graph"
+    main: chordal_graph_recognition.hs
+
+  chromatic_number-exe:
+    <<: *exe-defaults
+    source-dirs: "graph"
+    main: chromatic_number.hs
+
+  common_interval_decomposition_tree-exe:
+    <<: *exe-defaults
+    source-dirs: "graph"
+    main: common_interval_decomposition_tree.hs
+
+  cycle_detection-exe:
+    <<: *exe-defaults
+    source-dirs: "graph"
+    main: cycle_detection.hs
+
+  cycle_detection_undirected-exe:
+    <<: *exe-defaults
+    source-dirs: "graph"
+    main: cycle_detection_undirected.hs
+
+  directedmst-exe:
+    <<: *exe-defaults
+    source-dirs: "graph"
+    main: directedmst.hs
+
+  dominatortree-exe:
+    <<: *exe-defaults
+    source-dirs: "graph"
+    main: dominatortree.hs
+
+  enumerate_cliques-exe:
+    <<: *exe-defaults
+    source-dirs: "graph"
+    main: enumerate_cliques.hs
+
+  enumerate_triangles-exe:
+    <<: *exe-defaults
+    source-dirs: "graph"
+    main: enumerate_triangles.hs
+
+  frequency_table_of_tree_distance-exe:
+    <<: *exe-defaults
+    source-dirs: "graph"
+    main: frequency_table_of_tree_distance.hs
+
+  general_matching-exe:
+    <<: *exe-defaults
+    source-dirs: "graph"
+    main: general_matching.hs
+
+  general_weighted_matching-exe:
+    <<: *exe-defaults
+    source-dirs: "graph"
+    main: general_weighted_matching.hs
+
+  global_minimum_cut_of_dynamic_star_augmented_graph-exe:
+    <<: *exe-defaults
+    source-dirs: "graph"
+    main: global_minimum_cut_of_dynamic_star_augmented_graph.hs
+
+  jump_on_tree-exe:
+    <<: *exe-defaults
+    source-dirs: "graph"
+    main: jump_on_tree.hs
+
+  k_shortest_walk-exe:
+    <<: *exe-defaults
+    source-dirs: "graph"
+    main: k_shortest_walk.hs
+
+  lca-exe:
+    <<: *exe-defaults
+    source-dirs: "graph"
+    main: lca.hs
+
+  manhattanmst-exe:
+    <<: *exe-defaults
+    source-dirs: "graph"
+    main: manhattanmst.hs
+
+  maximum_independent_set-exe:
+    <<: *exe-defaults
+    source-dirs: "graph"
+    main: maximum_independent_set.hs
+
+  min_cost_b_flow-exe:
+    <<: *exe-defaults
+    source-dirs: "graph"
+    main: min_cost_b_flow.hs
+
+  minimum_spanning_tree-exe:
+    <<: *exe-defaults
+    source-dirs: "graph"
+    main: minimum_spanning_tree.hs
+
+  rooted_tree_isomorphism_classification-exe:
+    <<: *exe-defaults
+    source-dirs: "graph"
+    main: rooted_tree_isomorphism_classification.hs
+
+  scc-exe:
+    <<: *exe-defaults
+    source-dirs: "graph"
+    main: scc.hs
+
+  shortest_path-exe:
+    <<: *exe-defaults
+    source-dirs: "graph"
+    main: shortest_path.hs
+
+  three_edge_connected_components-exe:
+    <<: *exe-defaults
+    source-dirs: "graph"
+    main: three_edge_connected_components.hs
+
+  tree_decomposition_width_2-exe:
+    <<: *exe-defaults
+    source-dirs: "graph"
+    main: tree_decomposition_width_2.hs
+
+  tree_diameter-exe:
+    <<: *exe-defaults
+    source-dirs: "graph"
+    main: tree_diameter.hs
+
+  tree_path_composite_sum-exe:
+    <<: *exe-defaults
+    source-dirs: "graph"
+    main: tree_path_composite_sum.hs
+
+  two_edge_connected_components-exe:
+    <<: *exe-defaults
+    source-dirs: "graph"
+    main: two_edge_connected_components.hs
+
+  vertex_add_range_contour_sum_on_tree-exe:
+    <<: *exe-defaults
+    source-dirs: "graph"
+    main: vertex_add_range_contour_sum_on_tree.hs
+
+  vertex_get_range_contour_add_on_tree.hs-exe:
+    <<: *exe-defaults
+    source-dirs: "graph"
+    main: vertex_get_range_contour_add_on_tree.hs.hs
+
+  addition_of_big_integers-exe:
+    <<: *exe-defaults
+    source-dirs: "math"
+    main: addition_of_big_integers.hs
+
+  bernoulli_number-exe:
+    <<: *exe-defaults
+    source-dirs: "math"
+    main: bernoulli_number.hs
+
+  binomial_coefficient-exe:
+    <<: *exe-defaults
+    source-dirs: "math"
+    main: binomial_coefficient.hs
+
+  binomial_coefficient_prime_mod-exe:
+    <<: *exe-defaults
+    source-dirs: "math"
+    main: binomial_coefficient_prime_mod.hs
+
+  bitwise_and_convolution-exe:
+    <<: *exe-defaults
+    source-dirs: "math"
+    main: bitwise_and_convolution.hs
+
+  bitwise_xor_convolution-exe:
+    <<: *exe-defaults
+    source-dirs: "math"
+    main: bitwise_xor_convolution.hs
+
+  characteristic_polynomial-exe:
+    <<: *exe-defaults
+    source-dirs: "math"
+    main: characteristic_polynomial.hs
+
+  composition_of_formal_power_series-exe:
+    <<: *exe-defaults
+    source-dirs: "math"
+    main: composition_of_formal_power_series.hs
+
+  compositional_inverse_of_formal_power_series-exe:
+    <<: *exe-defaults
+    source-dirs: "math"
+    main: compositional_inverse_of_formal_power_series.hs
+
+  consecutive_terms_of_linear_recurrent_sequence-exe:
+    <<: *exe-defaults
+    source-dirs: "math"
+    main: consecutive_terms_of_linear_recurrent_sequence.hs
+
+  conversion_from_monomial_basis_to_newton_basis-exe:
+    <<: *exe-defaults
+    source-dirs: "math"
+    main: conversion_from_monomial_basis_to_newton_basis.hs
+
+  convolution_mod-exe:
+    <<: *exe-defaults
+    source-dirs: "math"
+    main: convolution_mod.hs
+
+  convolution_mod_1000000007-exe:
+    <<: *exe-defaults
+    source-dirs: "math"
+    main: convolution_mod_1000000007.hs
+
+  convolution_mod_2_64-exe:
+    <<: *exe-defaults
+    source-dirs: "math"
+    main: convolution_mod_2_64.hs
+
+  convolution_mod_large-exe:
+    <<: *exe-defaults
+    source-dirs: "math"
+    main: convolution_mod_large.hs
+
+  counting_primes-exe:
+    <<: *exe-defaults
+    source-dirs: "math"
+    main: counting_primes.hs
+
+  discrete_logarithm_mod-exe:
+    <<: *exe-defaults
+    source-dirs: "math"
+    main: discrete_logarithm_mod.hs
+
+  division_of_big_integers-exe:
+    <<: *exe-defaults
+    source-dirs: "math"
+    main: division_of_big_integers.hs
+
+  division_of_polynomials-exe:
+    <<: *exe-defaults
+    source-dirs: "math"
+    main: division_of_polynomials.hs
+
+  enumerate_primes-exe:
+    <<: *exe-defaults
+    source-dirs: "math"
+    main: enumerate_primes.hs
+
+  enumerate_quotients-exe:
+    <<: *exe-defaults
+    source-dirs: "math"
+    main: enumerate_quotients.hs
+
+  exp_of_formal_power_series-exe:
+    <<: *exe-defaults
+    source-dirs: "math"
+    main: exp_of_formal_power_series.hs
+
+  exp_of_formal_power_series_sparse-exe:
+    <<: *exe-defaults
+    source-dirs: "math"
+    main: exp_of_formal_power_series_sparse.hs
+
+  exp_of_set_power_series-exe:
+    <<: *exe-defaults
+    source-dirs: "math"
+    main: exp_of_set_power_series.hs
+
+  factorial-exe:
+    <<: *exe-defaults
+    source-dirs: "math"
+    main: factorial.hs
+
+  factorize-exe:
+    <<: *exe-defaults
+    source-dirs: "math"
+    main: factorize.hs
+
+  find_linear_recurrence-exe:
+    <<: *exe-defaults
+    source-dirs: "math"
+    main: find_linear_recurrence.hs
+
+  gcd_convolution-exe:
+    <<: *exe-defaults
+    source-dirs: "math"
+    main: gcd_convolution.hs
+
+  gcd_of_gaussian_integers-exe:
+    <<: *exe-defaults
+    source-dirs: "math"
+    main: gcd_of_gaussian_integers.hs
+
+  hafnian_of_matrix-exe:
+    <<: *exe-defaults
+    source-dirs: "math"
+    main: hafnian_of_matrix.hs
+
+  inv_of_formal_power_series-exe:
+    <<: *exe-defaults
+    source-dirs: "math"
+    main: inv_of_formal_power_series.hs
+
+  inv_of_formal_power_series_sparse-exe:
+    <<: *exe-defaults
+    source-dirs: "math"
+    main: inv_of_formal_power_series_sparse.hs
+
+  inv_of_polynomials-exe:
+    <<: *exe-defaults
+    source-dirs: "math"
+    main: inv_of_polynomials.hs
+
+  inverse_matrix-exe:
+    <<: *exe-defaults
+    source-dirs: "math"
+    main: inverse_matrix.hs
+
+  kth_root_integer-exe:
+    <<: *exe-defaults
+    source-dirs: "math"
+    main: kth_root_integer.hs
+
+  kth_root_mod-exe:
+    <<: *exe-defaults
+    source-dirs: "math"
+    main: kth_root_mod.hs
+
+  kth_term_of_linearly_recurrent_sequence-exe:
+    <<: *exe-defaults
+    source-dirs: "math"
+    main: kth_term_of_linearly_recurrent_sequence.hs
+
+  lcm_convolution-exe:
+    <<: *exe-defaults
+    source-dirs: "math"
+    main: lcm_convolution.hs
+
+  log_of_formal_power_series-exe:
+    <<: *exe-defaults
+    source-dirs: "math"
+    main: log_of_formal_power_series.hs
+
+  log_of_formal_power_series_sparse-exe:
+    <<: *exe-defaults
+    source-dirs: "math"
+    main: log_of_formal_power_series_sparse.hs
+
+  many_factorials-exe:
+    <<: *exe-defaults
+    source-dirs: "math"
+    main: many_factorials.hs
+
+  matrix_det-exe:
+    <<: *exe-defaults
+    source-dirs: "math"
+    main: matrix_det.hs
+
+  matrix_det_arbitrary_mod-exe:
+    <<: *exe-defaults
+    source-dirs: "math"
+    main: matrix_det_arbitrary_mod.hs
+
+  matrix_product-exe:
+    <<: *exe-defaults
+    source-dirs: "math"
+    main: matrix_product.hs
+
+  matrix_rank-exe:
+    <<: *exe-defaults
+    source-dirs: "math"
+    main: matrix_rank.hs
+
+  min_of_mod_of_linear-exe:
+    <<: *exe-defaults
+    source-dirs: "math"
+    main: min_of_mod_of_linear.hs
+
+  min_plus_convolution_convex_arbitrary-exe:
+    <<: *exe-defaults
+    source-dirs: "math"
+    main: min_plus_convolution_convex_arbitrary.hs
+
+  min_plus_convolution_convex_convex-exe:
+    <<: *exe-defaults
+    source-dirs: "math"
+    main: min_plus_convolution_convex_convex.hs
+
+  montmort_number_mod-exe:
+    <<: *exe-defaults
+    source-dirs: "math"
+    main: montmort_number_mod.hs
+
+  mul_mod2n_convolution-exe:
+    <<: *exe-defaults
+    source-dirs: "math"
+    main: mul_mod2n_convolution.hs
+
+  multiplication_of_big_integers-exe:
+    <<: *exe-defaults
+    source-dirs: "math"
+    main: multiplication_of_big_integers.hs
+
+  multipoint_evaluation-exe:
+    <<: *exe-defaults
+    source-dirs: "math"
+    main: multipoint_evaluation.hs
+
+  multipoint_evaluation_on_geometric_sequence-exe:
+    <<: *exe-defaults
+    source-dirs: "math"
+    main: multipoint_evaluation_on_geometric_sequence.hs
+
+  multivariate_convolution-exe:
+    <<: *exe-defaults
+    source-dirs: "math"
+    main: multivariate_convolution.hs
+
+  multivariate_convolution_cyclic-exe:
+    <<: *exe-defaults
+    source-dirs: "math"
+    main: multivariate_convolution_cyclic.hs
+
+  nim_product_64-exe:
+    <<: *exe-defaults
+    source-dirs: "math"
+    main: nim_product_64.hs
+
+  partition_function-exe:
+    <<: *exe-defaults
+    source-dirs: "math"
+    main: partition_function.hs
+
+  polynomial_composite_set_power_series-exe:
+    <<: *exe-defaults
+    source-dirs: "math"
+    main: polynomial_composite_set_power_series.hs
+
+  polynomial_interpolation-exe:
+    <<: *exe-defaults
+    source-dirs: "math"
+    main: polynomial_interpolation.hs
+
+  polynomial_interpolation_on_geometric_sequence-exe:
+    <<: *exe-defaults
+    source-dirs: "math"
+    main: polynomial_interpolation_on_geometric_sequence.hs
+
+  polynomial_taylor_shift-exe:
+    <<: *exe-defaults
+    source-dirs: "math"
+    main: polynomial_taylor_shift.hs
+
+  pow_of_formal_power_series-exe:
+    <<: *exe-defaults
+    source-dirs: "math"
+    main: pow_of_formal_power_series.hs
+
+  pow_of_formal_power_series_sparse-exe:
+    <<: *exe-defaults
+    source-dirs: "math"
+    main: pow_of_formal_power_series_sparse.hs
+
+  pow_of_matrix-exe:
+    <<: *exe-defaults
+    source-dirs: "math"
+    main: pow_of_matrix.hs
+
+  primality_test-exe:
+    <<: *exe-defaults
+    source-dirs: "math"
+    main: primality_test.hs
+
+  primitive_root-exe:
+    <<: *exe-defaults
+    source-dirs: "math"
+    main: primitive_root.hs
+
+  product_of_polynomial_sequence-exe:
+    <<: *exe-defaults
+    source-dirs: "math"
+    main: product_of_polynomial_sequence.hs
+
+  sharp_p_subset_sum-exe:
+    <<: *exe-defaults
+    source-dirs: "math"
+    main: sharp_p_subset_sum.hs
+
+  shift_of_sampling_points_of_polynomial-exe:
+    <<: *exe-defaults
+    source-dirs: "math"
+    main: shift_of_sampling_points_of_polynomial.hs
+
+  sparse_matrix_det-exe:
+    <<: *exe-defaults
+    source-dirs: "math"
+    main: sparse_matrix_det.hs
+
+  sqrt_mod-exe:
+    <<: *exe-defaults
+    source-dirs: "math"
+    main: sqrt_mod.hs
+
+  sqrt_of_formal_power_series-exe:
+    <<: *exe-defaults
+    source-dirs: "math"
+    main: sqrt_of_formal_power_series.hs
+
+  sqrt_of_formal_power_series_sparse-exe:
+    <<: *exe-defaults
+    source-dirs: "math"
+    main: sqrt_of_formal_power_series_sparse.hs
+
+  stern_brocot_tree-exe:
+    <<: *exe-defaults
+    source-dirs: "math"
+    main: stern_brocot_tree.hs
+
+  stirling_number_of_the_first_kind-exe:
+    <<: *exe-defaults
+    source-dirs: "math"
+    main: stirling_number_of_the_first_kind.hs
+
+  stirling_number_of_the_first_kind_fixed_k-exe:
+    <<: *exe-defaults
+    source-dirs: "math"
+    main: stirling_number_of_the_first_kind_fixed_k.hs
+
+  stirling_number_of_the_first_kind_small_p_large_n-exe:
+    <<: *exe-defaults
+    source-dirs: "math"
+    main: stirling_number_of_the_first_kind_small_p_large_n.hs
+
+  stirling_number_of_the_second_kind-exe:
+    <<: *exe-defaults
+    source-dirs: "math"
+    main: stirling_number_of_the_second_kind.hs
+
+  stirling_number_of_the_second_kind_fixed_k-exe:
+    <<: *exe-defaults
+    source-dirs: "math"
+    main: stirling_number_of_the_second_kind_fixed_k.hs
+
+  stirling_number_of_the_second_kind_small_p_large_n-exe:
+    <<: *exe-defaults
+    source-dirs: "math"
+    main: stirling_number_of_the_second_kind_small_p_large_n.hs
+
+  subset_convolution-exe:
+    <<: *exe-defaults
+    source-dirs: "math"
+    main: subset_convolution.hs
+
+  sum_of_exponential_times_polynomial-exe:
+    <<: *exe-defaults
+    source-dirs: "math"
+    main: sum_of_exponential_times_polynomial.hs
+
+  sum_of_exponential_times_polynomial_limit-exe:
+    <<: *exe-defaults
+    source-dirs: "math"
+    main: sum_of_exponential_times_polynomial_limit.hs
+
+  sum_of_floor_of_linear-exe:
+    <<: *exe-defaults
+    source-dirs: "math"
+    main: sum_of_floor_of_linear.hs
+
+  sum_of_totient_function-exe:
+    <<: *exe-defaults
+    source-dirs: "math"
+    main: sum_of_totient_function.hs
+
+  system_of_linear_equations-exe:
+    <<: *exe-defaults
+    source-dirs: "math"
+    main: system_of_linear_equations.hs
+
+  tetration_mod-exe:
+    <<: *exe-defaults
+    source-dirs: "math"
+    main: tetration_mod.hs
+
+  two_sat.hs-exe:
+    <<: *exe-defaults
+    source-dirs: "math"
+    main: two_sat.hs.hs
+
+  aplusb-exe:
+    <<: *exe-defaults
+    source-dirs: "sample"
+    main: aplusb.hs
+
+  many_aplusb-exe:
+    <<: *exe-defaults
+    source-dirs: "sample"
+    main: many_aplusb.hs
+
+  many_aplusb_128bit.hs-exe:
+    <<: *exe-defaults
+    source-dirs: "sample"
+    main: many_aplusb_128bit.hs.hs
+
+  enumerate_palindromes-exe:
+    <<: *exe-defaults
+    source-dirs: "string"
+    main: enumerate_palindromes.hs
+
+  longest_common_substring-exe:
+    <<: *exe-defaults
+    source-dirs: "string"
+    main: longest_common_substring.hs
+
+  lyndon_factorization-exe:
+    <<: *exe-defaults
+    source-dirs: "string"
+    main: lyndon_factorization.hs
+
+  number_of_substrings-exe:
+    <<: *exe-defaults
+    source-dirs: "string"
+    main: number_of_substrings.hs
+
+  prefix_substring_lcs-exe:
+    <<: *exe-defaults
+    source-dirs: "string"
+    main: prefix_substring_lcs.hs
+
+  runenumerate-exe:
+    <<: *exe-defaults
+    source-dirs: "string"
+    main: runenumerate.hs
+
+  suffixarray-exe:
+    <<: *exe-defaults
+    source-dirs: "string"
+    main: suffixarray.hs
+
+  zalgorithm-exe:
+    <<: *exe-defaults
+    source-dirs: "string"
+    main: zalgorithm.hs
+
