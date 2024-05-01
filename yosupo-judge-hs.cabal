@@ -18,6 +18,7 @@ executable addition_of_big_integers-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -60,6 +61,7 @@ executable aplusb-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -102,6 +104,7 @@ executable area_of_union_of_rectangles-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -144,6 +147,7 @@ executable assignment-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -186,6 +190,7 @@ executable associative_array-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -228,6 +233,7 @@ executable bernoulli_number-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -270,6 +276,7 @@ executable biconnected_components-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -312,6 +319,7 @@ executable binomial_coefficient-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -354,6 +362,7 @@ executable binomial_coefficient_prime_mod-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -396,6 +405,7 @@ executable bipartite_edge_coloring-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -438,6 +448,7 @@ executable bipartitematching-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -480,6 +491,7 @@ executable bitwise_and_convolution-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -522,6 +534,7 @@ executable bitwise_xor_convolution-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -564,6 +577,7 @@ executable cartesian_tree-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -606,6 +620,7 @@ executable characteristic_polynomial-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -648,6 +663,7 @@ executable chordal_graph_recognition-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -690,6 +706,7 @@ executable chromatic_number-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -732,6 +749,7 @@ executable common_interval_decomposition_tree-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -774,6 +792,7 @@ executable composition_of_formal_power_series-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -816,6 +835,7 @@ executable compositional_inverse_of_formal_power_series-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -858,6 +878,7 @@ executable consecutive_terms_of_linear_recurrent_sequence-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -900,6 +921,7 @@ executable conversion_from_monomial_basis_to_newton_basis-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -942,6 +964,7 @@ executable convex_layers-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -984,6 +1007,7 @@ executable convolution_mod-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -1026,6 +1050,7 @@ executable convolution_mod_1000000007-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -1068,6 +1093,7 @@ executable convolution_mod_2_64-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -1110,6 +1136,7 @@ executable convolution_mod_large-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -1152,6 +1179,7 @@ executable counting_primes-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -1194,6 +1222,7 @@ executable cycle_detection-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -1236,6 +1265,7 @@ executable cycle_detection_undirected-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -1278,6 +1308,7 @@ executable deque_operate_all_composite-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -1320,6 +1351,7 @@ executable directedmst-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -1362,6 +1394,7 @@ executable discrete_logarithm_mod-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -1404,6 +1437,7 @@ executable division_of_big_integers-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -1446,6 +1480,7 @@ executable division_of_polynomials-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -1488,6 +1523,7 @@ executable dominatortree-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -1530,6 +1566,7 @@ executable double_ended_priority_queue-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -1572,6 +1609,7 @@ executable dynamic_graph_vertex_add_component_sum-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -1614,6 +1652,7 @@ executable dynamic_sequence_range_affine_range_sum-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -1656,6 +1695,7 @@ executable dynamic_tree_subtree_add_subtree_sum-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -1698,6 +1738,7 @@ executable dynamic_tree_vertex_add_path_sum-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -1740,6 +1781,7 @@ executable dynamic_tree_vertex_add_subtree_sum-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -1782,6 +1824,7 @@ executable dynamic_tree_vertex_set_path_composite-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -1824,6 +1867,7 @@ executable enumerate_cliques-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -1866,6 +1910,7 @@ executable enumerate_palindromes-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -1908,6 +1953,7 @@ executable enumerate_primes-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -1950,6 +1996,7 @@ executable enumerate_quotients-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -1992,6 +2039,7 @@ executable enumerate_triangles-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -2034,6 +2082,7 @@ executable exp_of_formal_power_series-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -2076,6 +2125,7 @@ executable exp_of_formal_power_series_sparse-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -2118,6 +2168,7 @@ executable exp_of_set_power_series-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -2160,6 +2211,7 @@ executable factorial-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -2202,6 +2254,7 @@ executable factorize-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -2244,6 +2297,7 @@ executable find_linear_recurrence-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -2286,6 +2340,7 @@ executable frequency_table_of_tree_distance-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -2328,6 +2383,7 @@ executable gcd_convolution-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -2370,6 +2426,7 @@ executable gcd_of_gaussian_integers-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -2412,6 +2469,7 @@ executable general_matching-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -2454,6 +2512,7 @@ executable general_weighted_matching-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -2496,6 +2555,7 @@ executable global_minimum_cut_of_dynamic_star_augmented_graph-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -2538,6 +2598,7 @@ executable hafnian_of_matrix-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -2580,6 +2641,7 @@ executable inv_of_formal_power_series-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -2622,6 +2684,7 @@ executable inv_of_formal_power_series_sparse-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -2664,6 +2727,7 @@ executable inv_of_polynomials-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -2706,6 +2770,7 @@ executable inverse_matrix-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -2748,6 +2813,7 @@ executable jump_on_tree-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -2790,6 +2856,7 @@ executable k_shortest_walk-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -2832,6 +2899,7 @@ executable kth_root_integer-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -2874,6 +2942,7 @@ executable kth_root_mod-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -2916,6 +2985,7 @@ executable kth_term_of_linearly_recurrent_sequence-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -2958,6 +3028,7 @@ executable lca-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -3000,6 +3071,7 @@ executable lcm_convolution-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -3042,6 +3114,7 @@ executable line_add_get_min-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -3084,6 +3157,7 @@ executable log_of_formal_power_series-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -3126,6 +3200,7 @@ executable log_of_formal_power_series_sparse-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -3168,6 +3243,7 @@ executable longest_common_substring-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -3210,6 +3286,7 @@ executable longest_increasing_subsequence-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -3252,6 +3329,7 @@ executable lyndon_factorization-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -3294,6 +3372,7 @@ executable manhattanmst-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -3336,6 +3415,7 @@ executable many_aplusb-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -3368,8 +3448,8 @@ executable many_aplusb-exe
     , vector-th-unbox
   default-language: GHC2021
 
-executable many_aplusb_128bit.hs-exe
-  main-is: many_aplusb_128bit.hs.hs
+executable many_aplusb_128bit-exe
+  main-is: many_aplusb_128bit.hs
   hs-source-dirs:
       sample
   ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
@@ -3378,6 +3458,7 @@ executable many_aplusb_128bit.hs-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -3420,6 +3501,7 @@ executable many_factorials-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -3462,6 +3544,7 @@ executable matrix_det-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -3504,6 +3587,7 @@ executable matrix_det_arbitrary_mod-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -3546,6 +3630,7 @@ executable matrix_product-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -3588,6 +3673,7 @@ executable matrix_rank-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -3630,6 +3716,7 @@ executable maximum_independent_set-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -3672,6 +3759,7 @@ executable min_cost_b_flow-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -3714,6 +3802,7 @@ executable min_of_mod_of_linear-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -3756,6 +3845,7 @@ executable min_plus_convolution_convex_arbitrary-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -3798,6 +3888,7 @@ executable min_plus_convolution_convex_convex-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -3840,6 +3931,7 @@ executable minimum_spanning_tree-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -3882,6 +3974,7 @@ executable montmort_number_mod-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -3924,6 +4017,7 @@ executable mul_mod2n_convolution-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -3966,6 +4060,7 @@ executable multiplication_of_big_integers-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -4008,6 +4103,7 @@ executable multipoint_evaluation-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -4050,6 +4146,7 @@ executable multipoint_evaluation_on_geometric_sequence-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -4092,6 +4189,7 @@ executable multivariate_convolution-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -4134,6 +4232,7 @@ executable multivariate_convolution_cyclic-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -4176,6 +4275,7 @@ executable nim_product_64-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -4218,6 +4318,7 @@ executable number_of_subsequences-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -4260,6 +4361,7 @@ executable number_of_substrings-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -4302,6 +4404,7 @@ executable partition_function-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -4344,6 +4447,7 @@ executable persistent_queue-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -4386,6 +4490,7 @@ executable persistent_unionfind-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -4428,6 +4533,7 @@ executable point_add_range_sum-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -4470,6 +4576,7 @@ executable point_add_rectangle_sum-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -4512,6 +4619,7 @@ executable point_set_range_composite-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -4554,6 +4662,7 @@ executable point_set_range_sort_range_composite-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -4596,6 +4705,7 @@ executable polynomial_composite_set_power_series-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -4638,6 +4748,7 @@ executable polynomial_interpolation-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -4680,6 +4791,7 @@ executable polynomial_interpolation_on_geometric_sequence-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -4722,6 +4834,7 @@ executable polynomial_taylor_shift-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -4764,6 +4877,7 @@ executable pow_of_formal_power_series-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -4806,6 +4920,7 @@ executable pow_of_formal_power_series_sparse-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -4848,6 +4963,7 @@ executable pow_of_matrix-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -4890,6 +5006,7 @@ executable predecessor_problem-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -4932,6 +5049,7 @@ executable prefix_substring_lcs-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -4974,6 +5092,7 @@ executable primality_test-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -5016,6 +5135,7 @@ executable primitive_root-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -5058,6 +5178,7 @@ executable product_of_polynomial_sequence-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -5100,6 +5221,7 @@ executable queue_operate_all_composite-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -5142,6 +5264,7 @@ executable range_affine_point_get-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -5184,6 +5307,7 @@ executable range_affine_range_sum-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -5226,6 +5350,7 @@ executable range_chmin_chmax_add_range_sum-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -5268,6 +5393,7 @@ executable range_kth_smallest-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -5310,6 +5436,7 @@ executable range_reverse_range_sum-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -5352,6 +5479,7 @@ executable rectangle_sum-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -5394,6 +5522,7 @@ executable rooted_tree_isomorphism_classification-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -5436,6 +5565,7 @@ executable runenumerate-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -5478,6 +5608,7 @@ executable scc-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -5520,6 +5651,7 @@ executable segment_add_get_min-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -5562,6 +5694,7 @@ executable set_xor_min-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -5604,6 +5737,7 @@ executable sharp_p_subset_sum-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -5646,6 +5780,7 @@ executable shift_of_sampling_points_of_polynomial-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -5688,6 +5823,7 @@ executable shortest_path-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -5720,8 +5856,8 @@ executable shortest_path-exe
     , vector-th-unbox
   default-language: GHC2021
 
-executable sort_points_by_argument.hs-exe
-  main-is: sort_points_by_argument.hs.hs
+executable sort_points_by_argument-exe
+  main-is: sort_points_by_argument.hs
   hs-source-dirs:
       geo
   ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
@@ -5730,6 +5866,7 @@ executable sort_points_by_argument.hs-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -5772,6 +5909,7 @@ executable sparse_matrix_det-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -5814,6 +5952,7 @@ executable sqrt_mod-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -5856,6 +5995,7 @@ executable sqrt_of_formal_power_series-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -5898,6 +6038,7 @@ executable sqrt_of_formal_power_series_sparse-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -5940,6 +6081,7 @@ executable static_range_count_distinct-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -5982,6 +6124,7 @@ executable static_range_frequency-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -6024,6 +6167,7 @@ executable static_range_inversions_query-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -6066,6 +6210,7 @@ executable static_range_lis_query-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -6108,6 +6253,7 @@ executable static_range_sum-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -6150,6 +6296,7 @@ executable static_rectangle_add_rectangle_sum-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -6192,6 +6339,7 @@ executable staticrmq-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -6234,6 +6382,7 @@ executable stern_brocot_tree-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -6276,6 +6425,7 @@ executable stirling_number_of_the_first_kind-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -6318,6 +6468,7 @@ executable stirling_number_of_the_first_kind_fixed_k-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -6360,6 +6511,7 @@ executable stirling_number_of_the_first_kind_small_p_large_n-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -6402,6 +6554,7 @@ executable stirling_number_of_the_second_kind-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -6444,6 +6597,7 @@ executable stirling_number_of_the_second_kind_fixed_k-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -6486,6 +6640,7 @@ executable stirling_number_of_the_second_kind_small_p_large_n-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -6528,6 +6683,7 @@ executable subset_convolution-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -6570,6 +6726,7 @@ executable suffixarray-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -6612,6 +6769,7 @@ executable sum_of_exponential_times_polynomial-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -6654,6 +6812,7 @@ executable sum_of_exponential_times_polynomial_limit-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -6696,6 +6855,7 @@ executable sum_of_floor_of_linear-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -6738,6 +6898,7 @@ executable sum_of_totient_function-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -6780,6 +6941,7 @@ executable system_of_linear_equations-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -6822,6 +6984,7 @@ executable tetration_mod-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -6864,6 +7027,7 @@ executable three_edge_connected_components-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -6906,6 +7070,7 @@ executable tree_decomposition_width_2-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -6948,6 +7113,7 @@ executable tree_diameter-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -6990,6 +7156,7 @@ executable tree_path_composite_sum-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -7032,6 +7199,7 @@ executable two_edge_connected_components-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -7064,8 +7232,8 @@ executable two_edge_connected_components-exe
     , vector-th-unbox
   default-language: GHC2021
 
-executable two_sat.hs-exe
-  main-is: two_sat.hs.hs
+executable two_sat-exe
+  main-is: two_sat.hs
   hs-source-dirs:
       math
   ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
@@ -7074,6 +7242,7 @@ executable two_sat.hs-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -7116,6 +7285,7 @@ executable unionfind-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -7158,6 +7328,7 @@ executable vertex_add_path_sum-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -7200,6 +7371,7 @@ executable vertex_add_range_contour_sum_on_tree-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -7242,6 +7414,7 @@ executable vertex_add_subtree_sum-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -7274,8 +7447,8 @@ executable vertex_add_subtree_sum-exe
     , vector-th-unbox
   default-language: GHC2021
 
-executable vertex_get_range_contour_add_on_tree.hs-exe
-  main-is: vertex_get_range_contour_add_on_tree.hs.hs
+executable vertex_get_range_contour_add_on_tree-exe
+  main-is: vertex_get_range_contour_add_on_tree.hs
   hs-source-dirs:
       graph
   ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
@@ -7284,6 +7457,7 @@ executable vertex_get_range_contour_add_on_tree.hs-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -7316,8 +7490,8 @@ executable vertex_get_range_contour_add_on_tree.hs-exe
     , vector-th-unbox
   default-language: GHC2021
 
-executable vertex_set_path_composite.hs-exe
-  main-is: vertex_set_path_composite.hs.hs
+executable vertex_set_path_composite-exe
+  main-is: vertex_set_path_composite.hs
   hs-source-dirs:
       datastructure
   ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -DDEBUG
@@ -7326,6 +7500,7 @@ executable vertex_set_path_composite.hs-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq
@@ -7368,6 +7543,7 @@ executable zalgorithm-exe
     , array
     , attoparsec
     , base
+    , bitvec
     , bytestring
     , containers
     , deepseq

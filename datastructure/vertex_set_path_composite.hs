@@ -102,6 +102,15 @@ edgePathHLD = _pathHLD True
 vertPathHLD :: HLD -> Vertex -> Vertex -> [(VertexHLD, VertexHLD)]
 vertPathHLD = _pathHLD False
 
+_foldHLD :: (Monoid mono, Monad m) => Bool -> HLD -> (VertexHLD -> VertexHLD -> m mono) -> (VertexHLD -> VertexHLD -> m mono) -> Vertex -> Vertex -> m mono
+_foldHLD isEdge hld f b v1 v2 = do
+  (\g -> foldM g mempty (_pathHLD isEdge hld v1 v2)) $ \ !acc (!u, !v) -> do
+    !x <-
+      if u <= v
+        then f u v
+        else b v u
+    return $! acc <> x
+
 -- | Folds commutative monoid on tree edges using HLD.
 --
 -- = Segment tree
@@ -129,39 +138,25 @@ vertPathHLD = _pathHLD False
 -- = Typical Problems
 -- - [ABC 294 - G](https://atcoder.jp/contests/abc294/tasks/abc294_g)
 foldEdgesCommuteHLD :: (Monoid mono, Monad m) => HLD -> (VertexHLD -> VertexHLD -> m mono) -> Vertex -> Vertex -> m mono
-foldEdgesCommuteHLD hld f v1 v2 = do
-  (\g -> foldM g mempty (edgePathHLD hld v1 v2)) $ \ !acc (!u, !v) -> do
-    !x <-
-      if u <= v
-        then f u v
-        else f v u
-    return $! acc <> x
+foldEdgesCommuteHLD hld f = _foldHLD True hld f f
+
+-- | TODO: verify
+foldEdgesNonCommuteHLD :: (Monoid mono, Monad m) => HLD -> (VertexHLD -> VertexHLD -> m mono) -> (VertexHLD -> VertexHLD -> m mono) -> Vertex -> Vertex -> m mono
+foldEdgesNonCommuteHLD hld f b = _foldHLD True hld f b
 
 -- | Folds commutative monoid on tree vertices using HLD.
 --
 -- = Typical Problems
 -- - [Vertex Add Path Sum - Library Checker](https://judge.yosupo.jp/problem/vertex_add_path_sum)
 foldVertsCommuteHLD :: (Monoid mono, Monad m) => HLD -> (VertexHLD -> VertexHLD -> m mono) -> Vertex -> Vertex -> m mono
-foldVertsCommuteHLD hld f v1 v2 = do
-  (\g -> foldM g mempty (vertPathHLD hld v1 v2)) $ \ !acc (!u, !v) -> do
-    !x <-
-      if u <= v
-        then f u v
-        else f v u
-    return $! acc <> x
+foldVertsCommuteHLD hld f = _foldHLD False hld f f
 
 -- | Folds non-commutative monoid on tree vertices using HLD.
 --
 -- = Typical Problems
 -- - [Vertex Set Path Composite - Library Checker](https://judge.yosupo.jp/problem/vertex_set_path_composite)
 foldVertsNonCommuteHLD :: (Monoid mono, Monad m) => HLD -> (VertexHLD -> VertexHLD -> m mono) -> (VertexHLD -> VertexHLD -> m mono) -> Vertex -> Vertex -> m mono
-foldVertsNonCommuteHLD hld f b v1 v2 = do
-  (\g -> foldM g mempty (vertPathHLD hld v1 v2)) $ \ !acc (!u, !v) -> do
-    !x <-
-      if u <= v
-        then f u v
-        else b v u
-    return $! acc <> x
+foldVertsNonCommuteHLD hld = _foldHLD False hld
 
 -- | Heavy-light decomposition or Centroid Path Decomposition.
 --
@@ -229,6 +224,65 @@ hldOf tree = runST $ do
     !_ = dbgAssert (2 * (nVertsSG tree - 1) == nEdgesSG tree) "hldOf: not a non-directed tree"
     !root = 0 :: Vertex
 
+-- | Data set for folding a tree path with monoids using `HLD`.
+data TreeMonoid a s = TreeMonoid
+  { hldTM :: HLD,
+    -- | Is it targetting commutative monoids?
+    isCommuteTM :: Bool,
+    -- | Is it targetting edge weights? (It's targetting vertex weights on no).
+    isEdgeTM :: Bool,
+    -- | Segment tree for folding upwards.
+    streeFTM :: SegmentTree UM.MVector s a,
+    -- | Segment tree in folding downwards. Only created when the monoid is not commutative.
+    streeBTM :: SegmentTree UM.MVector s (Dual a)
+  }
+
+buildTM :: (PrimMonad m, Monoid a, U.Unbox a) => HLD -> Bool -> Bool -> U.Vector a -> m (TreeMonoid a (PrimState m))
+buildTM hldTM@HLD {..} isCommuteTM isEdgeTM xs_ = do
+  let !xs = U.update (U.replicate (U.length xs_) mempty) $ U.imap (\i x -> (indexHLD U.! i, x)) xs_
+  streeFTM <- buildSTree xs
+  streeBTM <-
+    if isCommuteTM
+      -- FIXME: is this safe?
+      then buildSTree U.empty
+      else buildSTree $ U.map Dual xs
+  return $ TreeMonoid {..}
+
+foldTM :: (PrimMonad m, Monoid a, U.Unbox a) => TreeMonoid a (PrimState m) -> Int -> Int -> m a
+foldTM TreeMonoid {..} v1 v2
+  | isCommuteTM = _foldHLD isEdgeTM hldTM (foldSTree streeFTM) (foldSTree streeFTM) v1 v2
+  | otherwise = _foldHLD isEdgeTM hldTM (foldSTree streeFTM) ((fmap getDual .) . foldSTree streeBTM) v1 v2
+
+readTM :: (PrimMonad m, Monoid a, U.Unbox a) => TreeMonoid a (PrimState m) -> Int -> a -> m a
+readTM TreeMonoid {..} i_ x = do
+  let !i = (indexHLD hldTM) U.! i_
+  readSTree streeFTM i
+
+writeTM :: (PrimMonad m, Monoid a, U.Unbox a) => TreeMonoid a (PrimState m) -> Int -> a -> m ()
+writeTM TreeMonoid {..} i_ x = do
+  let !i = (indexHLD hldTM) U.! i_
+  writeSTree streeFTM i x
+  -- TODO: resolve statically
+  unless isCommuteTM $ do
+    writeSTree streeBTM i $ Dual x
+
+exchangeTM :: (PrimMonad m, Monoid a, U.Unbox a) => TreeMonoid a (PrimState m) -> Int -> a -> m a
+exchangeTM TreeMonoid {..} i_ x = do
+  let !i = (indexHLD hldTM) U.! i_
+  !res <- exchangeSTree streeFTM i x
+  -- TODO: resolve statically
+  unless isCommuteTM $ do
+    writeSTree streeBTM i $ Dual x
+  return res
+
+modifyTM :: (PrimMonad m, Monoid a, U.Unbox a) => TreeMonoid a (PrimState m) -> (a -> a) -> Int -> m ()
+modifyTM TreeMonoid {..} f i_ = do
+  let !i = (indexHLD hldTM) U.! i_
+  modifySTree streeFTM f i
+  -- TODO: resolve statically
+  unless isCommuteTM $ do
+    modifySTree streeBTM (Dual . f . getDual) i
+
 solve :: StateT BS.ByteString IO ()
 solve = do
   (!n, !q) <- ints2'
@@ -237,21 +291,16 @@ solve = do
   qs <- U.replicateM q ints4'
 
   let !gr = buildSG (0, n - 1) $ swapDupeU uvs
-  let !hld@HLD {..} = hldOf gr
-
-  let es = U.update (U.replicate n mempty) $ U.imap (\i (!a, !b) -> (indexHLD U.! i, Affine2d (modInt a, modInt b))) abs
-  streeF <- buildSTree es
-  streeB <- buildSTree $ U.map Dual es
+  let !hld = hldOf gr
+  !tm <- buildTM hld False False $ U.map (\(!a, !b) -> Affine2d (modInt a, modInt b)) abs
 
   res <- (`U.mapMaybeM` qs) $ \case
     (0, !p, !c, !d) -> do
-      let !i = indexHLD U.! p
-      writeSTree streeF i $ Affine2d (modInt c, modInt d)
-      writeSTree streeB i $ Dual $ Affine2d (modInt c, modInt d)
+      writeTM tm p $ Affine2d (modInt c, modInt d)
       return Nothing
     (1, !u, !v, !x) -> do
       -- let !_ = dbg (u, v, edgePathHLD hld u v)
-      !m <- foldVertsNonCommuteHLD hld (foldSTree streeF) ((fmap getDual .) . foldSTree streeB) u v
+      !m <- foldTM tm u v
       let !res = m `sact` modInt x
       return $ Just res
     _ -> error "unreachable"

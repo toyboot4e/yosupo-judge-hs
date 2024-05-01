@@ -4,6 +4,7 @@ dependencies:
    - QuickCheck
    - array
    - attoparsec
+   - bitvec
    - bytestring
    - containers
    - deepseq
@@ -257,20 +258,20 @@ executables:
     source-dirs: "datastructure"
     main: vertex_add_subtree_sum.hs
 
-  vertex_set_path_composite.hs-exe:
+  vertex_set_path_composite-exe:
     <<: *exe-defaults
     source-dirs: "datastructure"
-    main: vertex_set_path_composite.hs.hs
+    main: vertex_set_path_composite.hs
 
   convex_layers-exe:
     <<: *exe-defaults
     source-dirs: "geo"
     main: convex_layers.hs
 
-  sort_points_by_argument.hs-exe:
+  sort_points_by_argument-exe:
     <<: *exe-defaults
     source-dirs: "geo"
-    main: sort_points_by_argument.hs.hs
+    main: sort_points_by_argument.hs
 
   assignment-exe:
     <<: *exe-defaults
@@ -442,10 +443,10 @@ executables:
     source-dirs: "graph"
     main: vertex_add_range_contour_sum_on_tree.hs
 
-  vertex_get_range_contour_add_on_tree.hs-exe:
+  vertex_get_range_contour_add_on_tree-exe:
     <<: *exe-defaults
     source-dirs: "graph"
-    main: vertex_get_range_contour_add_on_tree.hs.hs
+    main: vertex_get_range_contour_add_on_tree.hs
 
   addition_of_big_integers-exe:
     <<: *exe-defaults
@@ -882,10 +883,10 @@ executables:
     source-dirs: "math"
     main: tetration_mod.hs
 
-  two_sat.hs-exe:
+  two_sat-exe:
     <<: *exe-defaults
     source-dirs: "math"
-    main: two_sat.hs.hs
+    main: two_sat.hs
 
   aplusb-exe:
     <<: *exe-defaults
@@ -897,10 +898,10 @@ executables:
     source-dirs: "sample"
     main: many_aplusb.hs
 
-  many_aplusb_128bit.hs-exe:
+  many_aplusb_128bit-exe:
     <<: *exe-defaults
     source-dirs: "sample"
-    main: many_aplusb_128bit.hs.hs
+    main: many_aplusb_128bit.hs
 
   enumerate_palindromes-exe:
     <<: *exe-defaults

@@ -1,5 +1,4 @@
 **/.stack-work
-**/*lock*
 **/dist-newstyle
 **/node_modules
 **/.gitignore

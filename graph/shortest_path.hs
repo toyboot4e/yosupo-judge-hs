@@ -1,7 +1,9 @@
 -- {{{ toy-lib: https://github.com/toyboot4e/toy-lib
 {-# OPTIONS_GHC -Wno-unused-imports -Wno-unused-top-binds -Wno-orphans #-}
+
 {- ORMOLU_DISABLE -}
 {-# LANGUAGE BlockArguments, CPP, DefaultSignatures, DerivingVia, LambdaCase, MultiWayIf, NumDecimals, PatternSynonyms, QuantifiedConstraints, RecordWildCards, StandaloneDeriving, StrictData, TypeFamilies #-}
+import Data.Kind
 import Control.Applicative;import Control.DeepSeq;import Control.Exception (assert);import Control.Monad;import Control.Monad.Fix;import Control.Monad.IO.Class;import Control.Monad.Primitive;import Control.Monad.ST;import Control.Monad.State.Class;import Control.Monad.Trans (MonadTrans, lift);import Control.Monad.Trans.State.Strict (State, StateT, runState, evalState, execState, runStateT, evalStateT, execStateT);import Data.Bifunctor;import Data.Bits;import Data.Bool (bool);import Data.Char;import Data.Coerce;import Data.Either;import Data.Foldable;import Data.Function (on);import Data.Functor;import Data.Functor.Identity;import Data.IORef;import Data.List.Extra hiding (nubOn);import Data.Maybe;import Data.Ord;import Data.Primitive.MutVar;import Data.Proxy;import Data.STRef;import Data.Semigroup;import Data.Word;import Debug.Trace;import GHC.Exts;import GHC.Float (int2Float);import GHC.Ix (unsafeIndex);import GHC.Stack (HasCallStack);import System.Exit (exitSuccess);import System.IO;import System.Random;import System.Random.Stateful;import Text.Printf;import qualified Data.Ratio as Ratio;import Data.Array.IArray;import Data.Array.IO;import Data.Array.MArray;import Data.Array.ST;import Data.Array.Unboxed (UArray);import Data.Array.Unsafe;import qualified Data.Array as A;import qualified Data.ByteString.Builder as BSB;import qualified Data.ByteString.Char8 as BS;import qualified Data.ByteString.Unsafe as BSU;import Control.Monad.Extra hiding (loop);import Data.IORef.Extra;import Data.List.Extra hiding (merge);import Data.Tuple.Extra hiding (first, second);import Numeric.Extra;import Data.Bool.HT;import qualified Data.Ix.Enum as HT;import qualified Data.List.HT as HT;import qualified Data.Vector.Fusion.Bundle as FB;import qualified Data.Vector.Generic as G;import qualified Data.Vector.Generic.Mutable as GM;import qualified Data.Vector.Primitive as P;import qualified Data.Vector.Unboxed as U;import qualified Data.Vector.Unboxed.Base as U;import qualified Data.Vector.Unboxed.Mutable as UM;import qualified Data.Vector as V;import qualified Data.Vector.Mutable as VM;import qualified Data.Vector.Fusion.Bundle.Monadic as MB;import qualified Data.Vector.Fusion.Bundle.Size as MB;import qualified Data.Vector.Fusion.Stream.Monadic as MS;import qualified Data.Vector.Algorithms.Merge as VAM;import qualified Data.Vector.Algorithms.Intro as VAI;import qualified Data.Vector.Algorithms.Search as VAS;import Data.Graph (Vertex);import qualified Data.IntMap.Strict as IM;import qualified Data.Map.Strict as M;import qualified Data.IntSet as IS;import qualified Data.Set as S;import qualified Data.Sequence as Seq;import qualified Data.Heap as H;import qualified Data.HashMap.Strict as HM;import qualified Data.HashSet as HS;import qualified Test.QuickCheck as QC
 {-# RULES "Force inline VAI.sort" VAI.sort = VAI.sortBy compare #-}
 #ifdef DEBUG
@@ -13,45 +15,244 @@ type SparseUnionFind = IM.IntMap Int;newSUF :: SparseUnionFind;newSUF = IM.empty
 {- ORMOLU_ENABLE -}
 -- }}}
 
-{-# INLINE genericDjPath #-}
+data BinaryHeap (f :: Type -> Type) s a = BinaryHeap
+  { priorityBH :: a -> f a,
+    intVarsBH :: !(UM.MVector s Int),
+    internalVecBH :: !(UM.MVector s a)
+  }
+
+_sizeBH :: Int
+_sizeBH = 0
+{-# INLINE _sizeBH #-}
+
+type MinBinaryHeap s a = BinaryHeap Identity s a
+
+type MaxBinaryHeap s a = BinaryHeap Down s a
+
+newBinaryHeap :: (U.Unbox a, PrimMonad m) => (a -> f a) -> Int -> m (BinaryHeap f (PrimState m) a)
+newBinaryHeap prio n = BinaryHeap prio <$> UM.replicate 1 0 <*> UM.unsafeNew n
+
+newMinBinaryHeap :: (U.Unbox a, PrimMonad m) => Int -> m (MinBinaryHeap (PrimState m) a)
+newMinBinaryHeap = newBinaryHeap Identity
+
+newMaxBinaryHeap :: (U.Unbox a, PrimMonad m) => Int -> m (MaxBinaryHeap (PrimState m) a)
+newMaxBinaryHeap = newBinaryHeap Down
+
+getBinaryHeapSize :: (PrimMonad m) => BinaryHeap f (PrimState m) a -> m Int
+getBinaryHeapSize BinaryHeap {..} = UM.unsafeRead intVarsBH _sizeBH
+{-# INLINE getBinaryHeapSize #-}
+
+siftUpBy ::
+  (U.Unbox a, PrimMonad m) =>
+  (a -> a -> Ordering) ->
+  Int ->
+  UM.MVector (PrimState m) a ->
+  m ()
+siftUpBy cmp k vec = do
+  x <- UM.unsafeRead vec k
+  flip fix k $ \loop !i ->
+    if i > 0
+      then do
+        let parent = (i - 1) `unsafeShiftR` 1
+        p <- UM.unsafeRead vec parent
+        case cmp p x of
+          GT -> UM.unsafeWrite vec i p >> loop parent
+          _ -> UM.unsafeWrite vec i x
+      else UM.unsafeWrite vec 0 x
+{-# INLINE siftUpBy #-}
+
+siftDownBy ::
+  (U.Unbox a, PrimMonad m) =>
+  (a -> a -> Ordering) ->
+  Int ->
+  UM.MVector (PrimState m) a ->
+  m ()
+siftDownBy cmp k vec = do
+  x <- UM.unsafeRead vec k
+  let !n = UM.length vec
+  flip fix k $ \loop !i -> do
+    let l = unsafeShiftL i 1 .|. 1
+    let r = l + 1
+    if n <= l
+      then UM.unsafeWrite vec i x
+      else do
+        vl <- UM.unsafeRead vec l
+        if r < n
+          then do
+            vr <- UM.unsafeRead vec r
+            case cmp vr vl of
+              LT -> case cmp x vr of
+                GT -> UM.unsafeWrite vec i vr >> loop r
+                _ -> UM.unsafeWrite vec i x
+              _ -> case cmp x vl of
+                GT -> UM.unsafeWrite vec i vl >> loop l
+                _ -> UM.unsafeWrite vec i x
+          else case cmp x vl of
+            GT -> UM.unsafeWrite vec i vl >> loop l
+            _ -> UM.unsafeWrite vec i x
+{-# INLINE siftDownBy #-}
+
+heapifyBy ::
+  (U.Unbox a, PrimMonad m) =>
+  (a -> a -> Ordering) ->
+  UM.MVector (PrimState m) a ->
+  m ()
+heapifyBy cmp vec = do
+  let n = UM.length vec `quot` 2
+  forM_ [n - 1, n - 2 .. 0] $ \i -> do
+    siftDownBy cmp i vec
+{-# INLINE heapifyBy #-}
+
+class OrdVia f a where
+  compareVia :: (a -> f a) -> a -> a -> Ordering
+
+instance (Ord a) => OrdVia Identity a where
+  compareVia _ = coerce (compare :: Identity a -> Identity a -> Ordering)
+  {-# INLINE compareVia #-}
+
+instance (Ord a) => OrdVia Down a where
+  compareVia _ = coerce (compare :: Down a -> Down a -> Ordering)
+  {-# INLINE compareVia #-}
+
+buildBinaryHeapVia ::
+  (OrdVia f a, U.Unbox a, PrimMonad m) =>
+  (a -> f a) ->
+  U.Vector a ->
+  m (BinaryHeap f (PrimState m) a)
+buildBinaryHeapVia priorityBH vec = do
+  intVarsBH <- UM.replicate 1 $ U.length vec
+  internalVecBH <- U.thaw vec
+  heapifyBy (compareVia priorityBH) internalVecBH
+  return $! BinaryHeap {..}
+{-# INLINE buildBinaryHeapVia #-}
+
+buildMinBinaryHeap ::
+  (Ord a, U.Unbox a, PrimMonad m) =>
+  U.Vector a ->
+  m (BinaryHeap Identity (PrimState m) a)
+buildMinBinaryHeap = buildBinaryHeapVia Identity
+{-# INLINE buildMinBinaryHeap #-}
+
+buildMaxBinaryHeap ::
+  (Ord a, U.Unbox a, PrimMonad m) =>
+  U.Vector a ->
+  m (BinaryHeap Down (PrimState m) a)
+buildMaxBinaryHeap = buildBinaryHeapVia Down
+{-# INLINE buildMaxBinaryHeap #-}
+
+unsafeViewBH ::
+  (U.Unbox a, PrimMonad m) =>
+  BinaryHeap f (PrimState m) a ->
+  m a
+unsafeViewBH BinaryHeap {..} = UM.unsafeRead internalVecBH 0
+{-# INLINE unsafeViewBH #-}
+
+viewBH ::
+  (U.Unbox a, PrimMonad m) =>
+  BinaryHeap f (PrimState m) a ->
+  m (Maybe a)
+viewBH bh = do
+  size <- getBinaryHeapSize bh
+  if size > 0
+    then Just <$!> unsafeViewBH bh
+    else return Nothing
+{-# INLINE viewBH #-}
+
+insertBH ::
+  (OrdVia f a, U.Unbox a, PrimMonad m) =>
+  a ->
+  BinaryHeap f (PrimState m) a ->
+  m ()
+insertBH x BinaryHeap {..} = do
+  size <- UM.unsafeRead intVarsBH _sizeBH
+  UM.unsafeWrite intVarsBH _sizeBH (size + 1)
+  UM.unsafeWrite internalVecBH size x
+  siftUpBy (compareVia priorityBH) size internalVecBH
+{-# INLINE insertBH #-}
+
+unsafeDeleteBH ::
+  (OrdVia f a, U.Unbox a, PrimMonad m) =>
+  BinaryHeap f (PrimState m) a ->
+  m ()
+unsafeDeleteBH BinaryHeap {..} = do
+  size' <- subtract 1 <$!> UM.unsafeRead intVarsBH _sizeBH
+  UM.unsafeWrite intVarsBH _sizeBH size'
+  UM.unsafeSwap internalVecBH 0 size'
+  siftDownBy (compareVia priorityBH) 0 (UM.unsafeTake size' internalVecBH)
+{-# INLINE unsafeDeleteBH #-}
+
+modifyTopBH ::
+  (OrdVia f a, U.Unbox a, PrimMonad m) =>
+  (a -> a) ->
+  BinaryHeap f (PrimState m) a ->
+  m ()
+modifyTopBH f BinaryHeap {..} = do
+  UM.unsafeModify internalVecBH f 0
+  size <- UM.unsafeRead intVarsBH _sizeBH
+  siftDownBy (compareVia priorityBH) 0 (UM.unsafeTake size internalVecBH)
+{-# INLINE modifyTopBH #-}
+
+deleteFindTopBH ::
+  (OrdVia f a, U.Unbox a, PrimMonad m) =>
+  BinaryHeap f (PrimState m) a ->
+  m (Maybe a)
+deleteFindTopBH bh = do
+  size <- getBinaryHeapSize bh
+  if size > 0
+    then do
+      !top <- unsafeViewBH bh <* unsafeDeleteBH bh
+      return $ Just top
+    else return Nothing
+{-# INLINE deleteFindTopBH #-}
+
+clearBH :: (PrimMonad m) => BinaryHeap f (PrimState m) a -> m ()
+clearBH BinaryHeap {..} = UM.unsafeWrite intVarsBH 0 0
+
+freezeInternalVecBH ::
+  (U.Unbox a, PrimMonad m) =>
+  BinaryHeap f (PrimState m) a ->
+  m (U.Vector a)
+freezeInternalVecBH BinaryHeap {..} = do
+  size <- UM.unsafeRead intVarsBH _sizeBH
+  U.unsafeFreeze (UM.unsafeTake size internalVecBH)
+
 genericDjPath ::
   forall w.
   (U.Unbox w, Num w, Ord w) =>
   (Vertex -> U.Vector (Vertex, w)) ->
   Int ->
+  Int ->
   w ->
   U.Vector Vertex ->
   (U.Vector w, U.Vector Vertex)
-genericDjPath !gr !nVerts !undef !vs0 = runST $ do
+genericDjPath !gr !nVerts !nEdges !undef !vs0 = runST $ do
   !dist <- UM.replicate nVerts undef
   !last <- UM.replicate nVerts (-1 :: Vertex)
 
-  -- when there's loop:
-  -- !done <- UM.replicate nVertsSG False
+  !heap <- newMinBinaryHeap (nEdges + 1)
 
-  let !heap0 = H.fromList $ map (H.Entry 0) (U.toList vs0) :: H.Heap (H.Entry w Int)
   U.forM_ vs0 $ \v -> do
     UM.write dist v 0
+    insertBH (0, v) heap
 
-  flip fix heap0 $ \loop heap -> case H.uncons heap of
-    Nothing -> return ()
-    Just (H.Entry !w1 !v1, heap') -> do
-      (w1 >) <$> UM.read dist v1 >>= \case
-        -- better path was already visited
-        True -> loop heap'
-        False -> do
-          loop <=< (\f -> U.foldM' f heap' (gr v1)) $ \h (!v2, !dw2) -> do
+  fix $ \loop ->
+    deleteFindTopBH heap >>= \case
+      Nothing -> return ()
+      Just (!w1, !v1) -> do
+        !newVisit <- (== w1) <$> UM.read dist v1
+        when newVisit $ do
+          U.forM_ (gr v1) $ \(!v2, !dw2) -> do
             !w2 <- UM.read dist v2
             let !w2' = merge w1 dw2
-            if w2 == undef || w2' < w2
-              then do
-                UM.write dist v2 w2'
-                UM.write last v2 v1
-                return $ H.insert (H.Entry w2' v2) h
-              else return h
+            when (w2 == undef || w2' < w2) $ do
+              UM.write dist v2 w2'
+              UM.write last v2 v1
+              insertBH (w2', v2) heap
+        loop
 
   (,) <$> U.unsafeFreeze dist <*> U.unsafeFreeze last
   where
+    {-# INLINE merge #-}
     merge :: w -> w -> w
     merge = (+)
 
@@ -78,7 +279,7 @@ main = do
   !edges <- U.replicateM nEdges ints3
 
   let !gr = buildWSG (0, nVerts - 1) edges
-  let (!dists, !track) = genericDjPath (gr `adjW`) nVerts (-1 :: Int) (U.singleton src)
+  let (!dists, !track) = genericDjPath (gr `adjW`) nVerts nEdges (-1 :: Int) (U.singleton src)
 
   if track U.! sink == -1
     then print (-1 :: Int)
